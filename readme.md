@@ -1,16 +1,14 @@
-Questions? <Ramk@microsoft.com>
+
 
 # Table of Contents
-1. [Git Hub Landing Page](#git-hub-landing-page)
-2. [Adversarial ML 101](#adversarial-ml-101)
-3. [Finer points: 3](#finer-points)
-4. [Why Adversarial ML Threat Matrix?](#why-adversarial-ml-threat-matrix)
-5. [Structure of Adversarial ML Threat Matrix](#structure-of-adversarial-ml-threat-matrix)
-6. [Things to keep in mind before you use the framework](#things-to-keep-in-mind-before-you-use-the-framework)
-7. [Contributors](#contributors)
-8. [Feedback](#feedback)
-9. [Adversarial ML Threat Matrix](#adversarial-ml-threat-matrix)
-10. [Case Studies Page](#case-studies-page)
+1. [Adversarial ML 101](#adversarial-ml-101)
+2. [Why Adversarial ML Threat Matrix?](#why-adversarial-ml-threat-matrix)
+3. [Structure of Adversarial ML Threat Matrix](#structure-of-adversarial-ml-threat-matrix)
+4. [Things to keep in mind before you use the framework](#things-to-keep-in-mind-before-you-use-the-framework)
+5. [Contributors](#contributors)
+6. [Feedback](#feedback)
+7. [Adversarial ML Threat Matrix](#adversarial-ml-threat-matrix)
+8. [Case Studies Page](#case-studies-page)
     - [ClearviewAI Misconfiguration](#clearviewai-misconfiguration)
     - [GPT-2 Model Replication](#gpt-2-model-replication)
     - [ProofPoint Evasion](#proofpoint-evasion)
@@ -19,7 +17,7 @@ Questions? <Ramk@microsoft.com>
     - [Bosch Team Experience with EdgeAI ](#bosch-team-experience-with-edgeai)
     - [MITRE -- Physical Adversarial Examples -- TBD](#mitre-physical-adversarial-examples-tbd)
 ---- 
-## Git Hub Landing Page
+
 The goal of this project is to position attacks on ML systems in an ATT&CK-style framework so that security analysts can orient themselves
 in this new and upcoming threats.
 
@@ -80,6 +78,8 @@ However, there are two main differences:
 4.  This is not a risk prioritization framework - The Threat Matrix only collates the known techniques; it does not provide a means to prioritize the risks.
 
 ## Contributors
+Questions? Email <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
+
 | **Organization**    | **Contributors**    |
 | :---                | :---                |
 | Microsoft           | Ram Shankar Siva Kumar, Hyrum Anderson, Will Pearce, Suzy Shapperle, Blake Strom, Madeline Carmichael, Matt Swann, Nick Beede, Kathy Vu, Andi Comissioneru, Sharon Xia, Mario Goertzel, Jeffrey Snover, Abhishek Gupta  |
@@ -95,9 +95,13 @@ However, there are two main differences:
 | Software Engineering Institute/Carnegie Mellon University | Nathan M. VanHoudnos | 
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
 
-## Feedback
+## Feedback and Contact Information
 The Adversarial ML Threat Matrix is a first-cut attempt at collating a knowledge base of how ML systems can be attacked. We need your help to make it holistic and fill in the missing gaps!
-- Please submit a Pull Request with suggested changes! We are excited to make this system better with you!
+
+Please submit a Pull Request with suggested changes! We are excited to make this system better with you!
+
+**Join our Adversarial ML Threat Matrix Google Group**
+
 - For discussions around Adversarial ML Threat Matrix, we invite everyone to join our Google Group [here](https://groups.google.com/forum/#!forum/advmlthreatmatrix/join)
 - If you want to access this forum using your corporate email (as opposed to your gmail)
   - Open your browser in Incognito mode.
