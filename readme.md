@@ -6,7 +6,7 @@
 3. [Structure of Adversarial ML Threat Matrix](#structure-of-adversarial-ml-threat-matrix)
 4. [Things to keep in mind before you use the framework](#things-to-keep-in-mind-before-you-use-the-framework)
 5. [Contributors](#contributors)
-6. [Feedback](#feedback)
+6. [Feedback and Contact Information](#feedback)
 7. [Adversarial ML Threat Matrix](#adversarial-ml-threat-matrix)
 8. [Case Studies Page](#case-studies-page)
     - [ClearviewAI Misconfiguration](#clearviewai-misconfiguration)
@@ -78,7 +78,8 @@ However, there are two main differences:
 4.  This is not a risk prioritization framework - The Threat Matrix only collates the known techniques; it does not provide a means to prioritize the risks.
 
 ## Contributors
-Questions? Email <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
+
+Want to get involved? See [Feedback and Contact Information](#feedback)
 
 | **Organization**    | **Contributors**    |
 | :---                | :---                |
@@ -116,7 +117,8 @@ Please submit a Pull Request with suggested changes! We are excited to make this
 - Jan/Feb 2021.
     -   Please register here for the workshop for more hands on feedback
         session
-        
+ 
+ **Contact Information**
 -   If you have questions/comments that you'd like to discuss privately,
     please email: <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
 
