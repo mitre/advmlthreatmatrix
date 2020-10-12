@@ -1,5 +1,3 @@
-
-
 # Table of Contents
 1. [Adversarial ML 101](/pages/adversarial-ml-101.md)
 2. [Why Adversarial ML Threat Matrix?](/pages/why-adversarial-ml-threat-matrix.md)
@@ -20,7 +18,3 @@
 
 The goal of this project is to position attacks on ML systems in an ATT&CK-style framework so that security analysts can orient themselves
 in this new and upcoming threats.
-
-## Adversarial ML Threat Matrix 
-Interactive Version to be built by MITRE. For Editable version, contact <Ramk@Microsoft.com>
-
