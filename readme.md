@@ -7,13 +7,13 @@
 6. [Feedback and Contact Information](/pages/feedback.md)
 7. [Adversarial ML Threat Matrix](/pages/adversarial-ml-threat-matrix.md)
 8. [Case Studies Page](/pages/case-studies-page.md)
-    - [ClearviewAI Misconfiguration](/pages/case-studies.md#clearviewai-misconfiguration)
-    - [GPT-2 Model Replication](/pages/case-studies.md#gpt-2-model-replication)
-    - [ProofPoint Evasion](/pages/case-studies.md#proofpoint-evasion)
-    - [Tay Poisoning](/pages/case-studies.md#tay-poisoning)
-    - [Microsoft Red Team Exercise](/pages/case-studies.md#microsoft-red-team-exercise)
-    - [Bosch Team Experience with EdgeAI ](/pages/case-studies.md#bosch-team-experience-with-edgeai)
-    - [MITRE -- Physical Adversarial Examples -- TBD](/pages/case-studies.md#mitre-physical-adversarial-examples-tbd)
+    - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
+    - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
+    - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
+    - [Tay Poisoning](/pages/case-studies-page.md#tay-poisoning)
+    - [Microsoft Red Team Exercise](/pages/case-studies-page.md#microsoft-red-team-exercise)
+    - [Bosch Team Experience with EdgeAI ](/pages/case-studies-page.md#bosch-team-experience-with-edgeai)
+    - [MITRE -- Physical Adversarial Examples -- TBD](/pages/case-studies-page.md#mitre-physical-adversarial-examples-tbd)
 ---- 
 
 The goal of this project is to position attacks on ML systems in an ATT&CK-style framework so that security analysts can orient themselves
