@@ -8,6 +8,7 @@ We chose **real world attacks on production ML systems** based on:
 
 ### ClearviewAI Misconfiguration 
 **Summary of Incident:** Clearview AI's source code repository, though password protected, was misconfigured. This allowed an external researcher to register as a new user to the code repository and gain access to Clearview AI's credentials, keys to cloud storage buckets containing 70K video samples, copies of its applications and Slack tokens.
+
 **Reported by:** Mossab Hussein (@mossab_hussein)
 
 **Source:**
