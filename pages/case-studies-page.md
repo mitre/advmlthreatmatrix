@@ -58,10 +58,10 @@ We chose **real world attacks on production ML systems** based on:
 -   Average users of Twitter coordinated together with the intent of defacing Tay bot by exploiting this feedback loop
 -   As a result of this coordinated attack, Tay's training data was poisoned which led its conversation algorithms to generate more reprehensible material
 
-### Microsoft Red Team Exercise 
+### Microsoft - Azure Service 
 **Summary of Incident:** : The Azure Red Team and Azure Trustworthy ML team performed a red team exercise on an internal Azure service with the intention of disrupting its service
 
-**Reported by:** Azure TrustworthyML Team (<atml@microsoft.com>), Azure Red Team
+**Reported by:** Microsoft 
 **Mapping to Adversarial Threat Matrix :**
 -   The team first performed reconnaissance to gather information about the target ML model
 -   Then, using a valid account the team found the model file of the target ML model and the necessary training data
@@ -69,7 +69,7 @@ We chose **real world attacks on production ML systems** based on:
 -   Via an exposed API interface, the team performed an online evasion attack by replaying the adversarial examples, which helped achieve this goal.
 -   This operation had a combination of traditional ATT&CK enterprise techniques such as finding Valid account, and Executing code via an API -- all interleaved with adversarial ML specific steps such as offline and online evasion examples.
 
-### Bosch Team Experience with EdgeAI 
+### Bosch - EdgeAI 
 **Summary of Incident:** : Bosch team performed a research exercise on an internal edge AI system with a dual intention to extract the model and craft adversarial example to evade
 **Reported by:** Manoj Parmar (@mparmar47)
 **Mapping to Adversarial Threat Matrix :**
@@ -80,6 +80,18 @@ We chose **real world attacks on production ML systems** based on:
 -   This operation had a combination of traditional ATT&CK industrial control system techniques such as supply chain compromise via sensor, and Executing code via sensor interface. all interleaved with adversarial ML specific steps such as,
   - offline and online evasion examples.
 - The team was also able to reconstruct the edge ai system with extracted model
+
+
+### Microsoft – EdgeAI 
+**Summary of Incident:** The Azure Red Team performed a red team exercise on a new Microsoft product designed for running AI workloads at the Edge.  
+**Reported by:** Microsoft  
+**Mapping to Adversarial Threat Matrix:**  
+-   The team first performed reconnaissance to gather information about the target ML model
+-   The team first performed reconnaissance to gather information about the target ML model
+-   Then, used a publicly available version of the ML model, started sending queries and analyzing the responses (inferences) from the ML model. 
+-   Using this, the red team created an automated system that continuously manipulated an original target image, that tricked the ML model into producing incorrect inferences, but the perturbations in the image were unnoticeable to the human eye. 
+-   Feeding this perturbed image, the red team was able to evade the ML model into misclassifying the input image. 
+-   This operation had one step in the traditional ATTACK MITRE technique to do reconnaissance on the ML model being used in the product, and then the rest of the techniques was to use Offline evasion, followed by online evasion of the targeted product. 
 
 ### MITRE Physical Adversarial Examples
 - TBD 
