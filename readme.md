@@ -14,16 +14,17 @@
     - [Bosch Team Experience with EdgeAI ](/pages/case-studies-page.md#bosch-team-experience-with-edgeai)
     - [MITRE -- Physical Adversarial Examples -- TBD](/pages/case-studies-page.md#mitre-physical-adversarial-examples-tbd)
 5. [Contributors](#contributors)
-6. [Feedback and Contact Information](#feedback-and-contact-information)
+6. [Feedback](#feedback-and-getting-involved)
+6. [Contact Us](#contact-us)
 ---- 
 
 The goal of this project is to position attacks on ML systems in an ATT&CK-style framework so that security analysts can orient themselves
 in this new and upcoming threats.
 
+![alt text](resources/advmlthreatmatrix.png)
+
 
 ## Contributors
-
-Want to get involved? See [Feedback and Contact Information](#feedback-and-contact-information)
 
 | **Organization**    | **Contributors**    |
 | :---                | :---                |
@@ -40,11 +41,15 @@ Want to get involved? See [Feedback and Contact Information](#feedback-and-conta
 | Software Engineering Institute/Carnegie Mellon University | Nathan M. VanHoudnos | 
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
 
-## Feedback and Contact Information
+## Feedback and Getting Involved 
 
 The Adversarial ML Threat Matrix is a first-cut attempt at collating a knowledge base of how ML systems can be attacked. We need your help to make it holistic and fill in the missing gaps!
 
-Please submit a Pull Request with suggested changes! We are excited to make this system better with you!
+**Corrections and Improvement**
+
+-   For immediate corrections, please submit a Pull Request with suggested changes! We are excited to make this system better with you!
+-   For a more hands on feedback session, we are partnering with Defcon's AI Village to open up the framework to all community members to get feedback and make it better. Current thinking is to have this event circa
+Jan/Feb 2021.Please register here for the workshop for more hands on feedback session
 
 **Join our Adversarial ML Threat Matrix Google Group**
 
@@ -57,13 +62,10 @@ Please submit a Pull Request with suggested changes! We are excited to make this
     folder. So, you may want to create a rule to go into your inbox
     instead
 
-**Want to work with us on the next iteration of the framework?**
-- We are partnering with Defcon's AI Village to open up the framework to all community members to get feedback and make it better. Current thinking is to have this event circa
-- Jan/Feb 2021.
-    -   Please register here for the workshop for more hands on feedback
-        session
  
- **Contact Information**
--   If you have questions/comments that you'd like to discuss privately,
-    please email: <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
+ ## Contact Us
+For corrections and improvement, see [Feedback](#feedback)
+
+-  Our public email group is advmlthreatmatrix@googlegroups.com. This emails all the contributors. 
+-  For private questions/comments, please email: <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
 
