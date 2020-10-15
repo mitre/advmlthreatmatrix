@@ -1,0 +1,5 @@
+## Things to keep in mind before you use the framework:
+1.  This is a **first cut attempt** at collating known adversary techniques against ML Systems. We plan to iterate on the framework based on feedback from the security     and adversarial machine learning community (please engage with us and help make the matrix better!). Net-Net: This is a *living document* that will be routinely       updated.
+2.  Only known bad is listed in the Matrix. Adversarial ML is an active area of research with new classes constantly being discovered. If you find a technique that is     not listed, please enlist it in the framework (see section on Feedback)
+3.  We are not prescribing definitive defenses at this point - The world of adversarial. We are already in conversations to add best practices in future revisions such     as adversarial training for adversarial examples, restricting the number of significant digits in confidence score for model stealing.
+4.  This is not a risk prioritization framework - The Threat Matrix only collates the known techniques; it does not provide a means to prioritize the risks.
