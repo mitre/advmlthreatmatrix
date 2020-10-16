@@ -186,4 +186,4 @@ To maximize impact on the target organization, malware designed for encrypting d
 
 
 # Next Recommended Reading 
-See how the matrix is in action using [Case Studies Page](/pages/case-studies-page.md)
+See how the matrix can be used via [Case Studies Page](/pages/case-studies-page.md)
