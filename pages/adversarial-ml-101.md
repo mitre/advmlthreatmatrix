@@ -5,7 +5,7 @@ Informally, Adversarial ML is "subverting machine learning systems for fun and p
 
 Consider a typical ML pipeline shown below that is gated behind an API, wherein the only way to use the model is to send a query and observe an response. In this example, we assume a blackbox setting: the attacker does **NOT** have direct access to the training data, no knowledge of the algorithm used and no source code of the model. The attacker only queries the model and observes the response.
 
-![alt text](images/AdvML101)
+![Adversarial ML 101](/images/AdvML101.PNG)
 
 Here are some of the adversarial ML attacks that an adversary can perform on this system:
 | Attack 		 				| Overview	|
