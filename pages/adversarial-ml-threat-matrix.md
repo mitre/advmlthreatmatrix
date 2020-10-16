@@ -185,3 +185,5 @@ One example of this type of attack is Sponge attack.
 To maximize impact on the target organization, malware designed for encrypting data may have worm-like features to propagate across a network by leveraging other attack techniques like [Valid Accounts](https://attack.mitre.org/techniques/T1078), [OS Credential Dumping](https://attack.mitre.org/techniques/T1003), and [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002).(Citation: FireEye WannaCry 2017)(Citation: US-CERT NotPetya 2017)
 
 
+# Next Recommended Reading 
+See how the matrix is in action using [Case Studies Page](/pages/case-studies-page.md)
