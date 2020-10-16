@@ -1,19 +1,11 @@
 ## Case Studies Page
-Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as this document demonstrates these proof-of-concept attacks are now being seen in-the-wild. To In production settings ML systems are trainined on PII, trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. Average users have gamed algorithms, security researchers, red teams, and bad actors are actively attacking ML systems.
+Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trainined on PII, trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to a production ML systems, and each demonstrates one of the following characteristics.
 
-The below case-studies are an effort to shine a light on successful attacks against ML systems in production. These case-studies include a range of attacks on ML systems used in both "security-sensitive" applications like cybersecurity, and non-security-sensitive applications like chatbots. 
+1. Range of Attacks: evasion, poisoning, model replication and exploiting traditional software flaws.
+2. Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team
+3. Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on- presmise, ML models on edge
+4. Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots
 
-We welcome any comments, feedback, or new case-studies! Before submitting a case-study, consider that the attack
-
-1.  Exploits one or more ML vulnerabilities 
-    - Evasion
-    - Poisoning 
-    - Model replication
-    - A bug in code that enabled any of the above
-2.  The attack was against a production system
-    - Machine Learning as a Service (MLaaS)
-    - ML models hosted on cloud (AzureML, AWS, GCP, etc), on-prem, or on the edge (Mobile, IOT, etc)
-3.  Most importantly, you have permission to share the information. Please follow the proper channels before reporting a new attack. If you are unsure of how best disclose, the team here is happy to help coordinate responsible disclosure. 
 
 ### ClearviewAI Misconfiguration 
 **Summary of Incident:** Clearview AI's source code repository, though password protected, was misconfigured to allow an arbitrary user to register an account. This allowed an external researcher to gain access to a private code repository that contained Clearview AI production credentials, keys to cloud storage buckets containing 70K video samples, and copies of its applications and Slack tokens. With access to training data, a bad-actor has the ability to cause an arbitrary misclassificaion in the deployed model. 
@@ -119,3 +111,17 @@ We welcome any comments, feedback, or new case-studies! Before submitting a case
 
 ### MITRE Physical Adversarial Examples
 - TBD 
+
+
+# Contributing
+We welcome any comments, feedback, or new case-studies! Before submitting a case-study, consider that the attack..
+
+1.  Exploits one or more ML vulnerabilities 
+    - Evasion
+    - Poisoning 
+    - Model replication
+    - A bug in code that enabled any of the above
+2.  The attack was against a production system
+    - Machine Learning as a Service (MLaaS)
+    - ML models hosted on cloud (AzureML, AWS, GCP, etc), on-prem, or on the edge (Mobile, IOT, etc)
+3.  Most importantly, you have permission to share the information. Please follow the proper channels before reporting a new attack. If you are unsure of how best disclose, the team here is happy to help coordinate responsible disclosure. 
