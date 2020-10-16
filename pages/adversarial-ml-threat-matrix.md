@@ -12,10 +12,18 @@ However, there are two main differences:
 2.  When we analyzed real-world attacks on ML systems, we found out that attackers can pursue different strategies: Rely on traditional cybersecurity technique only;       Rely on Adversarial ML techniques only; or Employ a combination of traditional cybersecurity techniques and ML techniques.
   
     **Difference:** In Adversarial ML Threat Matrix, "Techniques" come in two flavors:
-        -   Techniques in orange are specific to ML systems
-        -   Techniques in white are applicable to both ML and non-ML systems and come directly from Enterprise ATT&CK
+     -  Techniques in orange are specific to ML systems
+     -  Techniques in white are applicable to both ML and non-ML systems and come directly from Enterprise ATT&CK             
 
         Note: The Adversarial ML Threat Matrix is not yet part of the ATT&CK matrix.
+
+
+## Things to keep in mind before you use the framework:
+1.  This is a **first cut attempt** at collating known adversary techniques against ML Systems. We plan to iterate on the framework based on feedback from the security     and adversarial machine learning community (please engage with us and help make the matrix better!). Net-Net: This is a *living document* that will be routinely updated. 
+   -  Have feedback or improvements? We want in! See [Feedback](/pages/readme#feedback-and-getting-involved)
+2.  Only known bad is listed in the Matrix. Adversarial ML is an active area of research with new classes constantly being discovered. If you find a technique that is     not listed, please enlist it in the framework (see section on Feedback)
+3.  We are not prescribing definitive defenses at this point - The world of adversarial. We are already in conversations to add best practices in future revisions such     as adversarial training for adversarial examples, restricting the number of significant digits in confidence score for model stealing.
+4.  This is not a risk prioritization framework - The Threat Matrix only collates the known techniques; it does not provide a means to prioritize the risks.
 
 
 
