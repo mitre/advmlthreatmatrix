@@ -18,7 +18,7 @@ We chose **real world attacks on production ML systems** based on:
 - In this scenario, a security researcher gained initial access to via a "Valid Account" that was created through a misconfiguration. No Adversarial ML techniques were used.
 - these kinds of attacks illustrate that any attempt to secure ML system should be on top of "traditional" good cybersecurity hygiene such as locking down the system with least privileges, multi factor authentication and monitoring and auditing.
 
-[ClearviewAI](images/ClearviewAI.png)
+![ClearviewAI](/images/ClearviewAI.png)
 
 ### GPT-2 Model Replication 
 **Summary of Incident:** : OpenAI built GPT-2, a powerful natural language model and calling it "too dangerous to release" adopted a staged-release process to incrementally release 1.5 Billion parameter model. Before the 1.5B parameter model could be released by OpenAI, two ML researchers replicated the model and released it to the public. *Note this is a model replication attack: Here, attacker is able to recover functionally equivalent model (but generally with lower fidelity), perhaps to do reconnaissance (See proof point attack). In Model stealing, the fidelity of the model is comparable to the original, victim model.*
@@ -36,7 +36,7 @@ We chose **real world attacks on production ML systems** based on:
 -   The researchers then trained the modified Grover on the dataset they curated, using Grover's initial hyperparameters, which
     resulted in their replicated model.
   
-  [OpenAI](images/OpenAI.png)
+ ![OpenAI](/images/OpenAI.png)
 
 ### ProofPoint Evasion 
 **Summary of Incident:** : CVE-2019-20634 describes how ML researchers evaded ProofPoint's email protection system by first building a copy-cat email protection ML model, and using the insights to evade the live system.
@@ -51,6 +51,8 @@ We chose **real world attacks on production ML systems** based on:
 -   Next, the ML researchers algorithmically found samples that this "offline" copy cat model
 -   Finally, these insights from the offline model allowed the researchers to create malicious emails that received preferrable
     scores from the real ProofPoint email protection system, hence bypassing it.
+ 
+  ![ProofPoint](/images/ProofPoint.png)
 
 ### Tay Poisoning 
  **Summary of Incident:** Microsoft created Tay, a twitter chatbot for 18- to 24- year-olds in the U.S. for entertainment purposes. Within 24 hours of its deployment, Tay had to be decommissioned because it tweeted reprehrensible words.
@@ -63,6 +65,9 @@ We chose **real world attacks on production ML systems** based on:
 -   Average users of Twitter coordinated together with the intent of defacing Tay bot by exploiting this feedback loop
 -   As a result of this coordinated attack, Tay's training data was poisoned which led its conversation algorithms to generate more reprehensible material
 
+  ![Tay](/images/Tay.png)
+
+
 ### Microsoft - Azure Service 
 **Summary of Incident:** : The Azure Red Team and Azure Trustworthy ML team performed a red team exercise on an internal Azure service with the intention of disrupting its service
 
@@ -73,6 +78,8 @@ We chose **real world attacks on production ML systems** based on:
 -   Using this, the red team performed an offline evasion attack by methodically searching for adversarial examples
 -   Via an exposed API interface, the team performed an online evasion attack by replaying the adversarial examples, which helped achieve this goal.
 -   This operation had a combination of traditional ATT&CK enterprise techniques such as finding Valid account, and Executing code via an API -- all interleaved with adversarial ML specific steps such as offline and online evasion examples.
+
+![Msft1](/images/Msft1.png)
 
 ### Bosch - EdgeAI 
 **Summary of Incident:** : Bosch team performed a research exercise on an internal edge AI system with a dual intention to extract the model and craft adversarial example to evade
@@ -86,6 +93,7 @@ We chose **real world attacks on production ML systems** based on:
   - offline and online evasion examples.
 - The team was also able to reconstruct the edge ai system with extracted model
 
+![Bosch1](/images/Bosch1.png)
 
 ### Microsoft – EdgeAI 
 **Summary of Incident:** The Azure Red Team performed a red team exercise on a new Microsoft product designed for running AI workloads at the Edge.  
@@ -97,6 +105,8 @@ We chose **real world attacks on production ML systems** based on:
 -   Using this, the red team created an automated system that continuously manipulated an original target image, that tricked the ML model into producing incorrect inferences, but the perturbations in the image were unnoticeable to the human eye. 
 -   Feeding this perturbed image, the red team was able to evade the ML model into misclassifying the input image. 
 -   This operation had one step in the traditional ATTACK MITRE technique to do reconnaissance on the ML model being used in the product, and then the rest of the techniques was to use Offline evasion, followed by online evasion of the targeted product. 
+
+![msft2](/images/msft2.png)
 
 ### MITRE Physical Adversarial Examples
 - TBD 
