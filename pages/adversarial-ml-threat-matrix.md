@@ -35,7 +35,7 @@ However, there are two main differences:
 
 #### Dataset Collection
 
- Adversaries may collect datasets similar to those used by a particular organization or in a specific approach. Datasets may be identified during [Public Information Acquisition](/techniques/A0007). This may allow the adversary to replicate a private model's funcionality, constituting [Intellectual Property Theft](/techniques/A0013), or enable the adversary to carry out other attacks such as [ML Model Evasion](/techniques/A0012).
+ Adversaries may collect datasets similar to those used by a particular organization or in a specific approach. Datasets may be identified when [Acquiring OSINT Information](#Acquire-OSINT-Information). This may allow the adversary to replicate a private model's funcionality, constituting [Intellectual Property Theft](#Stolen-Intellectual-Property), or enable the adversary to carry out other attacks such as an [Evasion Attack](#Evasion-Attack).
 
 #### Acquire OSINT Information
 
@@ -43,7 +43,7 @@ However, there are two main differences:
 
 #### ML Model Discovery
 
- Adversaries may attempt to identify machine learning pipelines that exist on the system and gather information about them, including the software stack used to train and deploy models, training and testing data repositories, model repositories, and software repositories containing algorithms. This information can be used to identify targets for further collection, exfiltration, or disruption, or to tailor and improve attacks. Once this information is identified, data may be collected during [ML Pipeline Collection](techniques/A0005/).
+ Adversaries may attempt to identify machine learning pipelines that exist on the system and gather information about them, including the software stack used to train and deploy models, training and testing data repositories, model repositories, and software repositories containing algorithms. This information can be used to identify targets for further collection, exfiltration, or disruption, or to tailor and improve attacks.
 
 
 ### Initial Access
@@ -83,13 +83,13 @@ The overlap of permissions for local, domain, and cloud accounts across a networ
 
 #### Unsafe ML Model Execution
 
- An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [compromised ML supply chain](/techniques/T1195/004/). An example of this technique is to use pickle embedding to introduce malicious data payloads.
+ An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-Trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
 
 ### Persistence
 
 #### Unsafe ML Model Execution
 
- An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [compromised ML supply chain](/techniques/T1195/004/). An example of this technique is to use pickle embedding to introduce malicious data payloads.
+ An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
 
 #### Account Manipulation
 
@@ -112,11 +112,11 @@ Example evasion attacks include Simple Transformation, Common Corruption, Advers
 
 #### Model Poisoning
 
- Adversaries can train machine learning that are performant, but contain backdoors that produce inference errors when presented with input containing a trigger defined by the adversary. A model with a backdoor can be introduced by an innocent user via [ML Supply Chain Compromise](/techniques/T1195/004) or can be a result of [Data Poisoning](/techniques/A0011). This backdoored model can be exploited at inference time with an [Attack on ML model integrity](/techniques/A0003)
+ Adversaries can train machine learning that are performant, but contain backdoors that produce inference errors when presented with input containing a trigger defined by the adversary. A model with a backdoor can be introduced by an innocent user via a [pre-trained model with backdoor](#Pre-Trained-Model-with-Backdoor) or can be a result of [Data Poisoning](#Data-Poisoning). This backdoored model can be exploited at inference time with an [Evasion Attack](#Evasion-Attack)
 
 #### Data Poisoning
 
- Adversaries may attempt to poison datasets used by a ML system by modifying the underlying data or its labels. This allows the adversary to embed vulnerabilities in ML models trained on the data that may not be easily detectable. The embedded vulnerability can be activated at a later time by providing the model with data containing the trigger. Data Poisoning can help enable attacks such as [ML Model Evasion](/techniques/A0012) and [ML Model Integrity Attacks](/techniques/A0002).
+ Adversaries may attempt to poison datasets used by a ML system by modifying the underlying data or its labels. This allows the adversary to embed vulnerabilities in ML models trained on the data that may not be easily detectable. The embedded vulnerability can be activated at a later time by providing the model with data containing the trigger. Data Poisoning can help enable attacks such as [ML Model Evasion](#Evasion-Attack).
 
 ##### Tainting Data from Acquisition - Label Corruption
 
@@ -138,7 +138,7 @@ Example evasion attacks include Simple Transformation, Common Corruption, Advers
 
 #### Insecure Storage
 
- Adversaries may exfiltrate proprietary machine learning models or private training and testing data by exploiting insecure storage mechanisms. Adversaries may [discover](/techniques/A0001), [collect](/techniques/A0005), and finally exfiltrate components of a ML pipeline, resulting in [Intellectual Property Theft](/techniques/A0013)
+ Adversaries may exfiltrate proprietary machine learning models or private training and testing data by exploiting insecure storage mechanisms. Adversaries may [discover](#ML-Model-Discovery), and exfiltrate components of a ML pipeline, resulting in [Stolen Intellectual Property](#Stolen-Intellectual-Property)
 
 #### Exfiltration Over ML Inference API
 
@@ -170,7 +170,7 @@ Example evasion attacks include Simple Transformation, Common Corruption, Advers
 
 #### Stolen Intellectual Property
 
- Adversaries may steal intellectual property by replicating the functionality of ML models, or by [exfiltrating private data over ML inference APIs](/techniques/A0003).
+ Adversaries may steal intellectual property by [Model Replication](#ML-Model-Replication) or [Model Stealing](#ML-Model-Stealing).
 
 #### Denial of Service
 
