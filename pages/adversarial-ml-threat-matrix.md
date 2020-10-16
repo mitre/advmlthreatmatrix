@@ -115,7 +115,7 @@ Organizations often grant elevated access to second or third-party external prov
 
 #### ![AdvML](/images/color_advml.png)Execute Unsafe ML Models
 
-An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-Trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor).
+An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-Trained Model with Backdoor](#Pre-Trained-ML-Model-with-Backdoor).
 
 > ##### ![AdvML](/images/color_advml.png)ML Models from Compromised Sources
 >
@@ -137,7 +137,7 @@ Stubs
 
 #### ![AdvML](/images/color_advml.png)Unsafe ML Model Execution
 
-An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
+An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-trained Model with Backdoor](#Pre-Trained-ML-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
 
 #### ![Cyber](/images/color_cyber.png)Account Manipulation
 
@@ -168,7 +168,7 @@ Example evasion attacks include Simple Transformation, Common Corruption, Advers
 
 #### ![AdvML](/images/color_advml.png)Model Poisoning
 
-Adversaries can train machine learning that are performant, but contain backdoors that produce inference errors when presented with input containing a trigger defined by the adversary. A model with a backdoor can be introduced by an innocent user via a [pre-trained model with backdoor](#Pre-Trained-Model-with-Backdoor) or can be a result of [Data Poisoning](#Data-Poisoning). This backdoored model can be exploited at inference time with an [Evasion Attack](#Evasion-Attack)
+Adversaries can train machine learning that are performant, but contain backdoors that produce inference errors when presented with input containing a trigger defined by the adversary. A model with a backdoor can be introduced by an innocent user via a [pre-trained model with backdoor](#Pre-Trained-ML-Model-with-Backdoor) or can be a result of [Data Poisoning](#Data-Poisoning). This backdoored model can be exploited at inference time with an [Evasion Attack](#Evasion-Attack)
 
 #### ![AdvML](/images/color_advml.png)Data Poisoning
 
