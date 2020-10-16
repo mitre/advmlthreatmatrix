@@ -3,7 +3,9 @@ This is a short primer intended for security analysts
 
 Informally, Adversarial ML is "subverting machine learning systems for fun and profit". The methods underpinning the production machine learning systems are systematically vulnerable to a new class of vulnerabilities across the machine learning supply chain collectively known as Adversarial Machine Learning. Adversaries can exploit these vulnerabilities to manipulate AI systems in order to alter their behavior to serve a malicious end goal.
 
-Consider a typical ML pipeline shown in the left that is gated behind an API, wherein the only way to use the model is to send a query and observe an response. In this example, we assume a blackbox setting: the attacker does **NOT** have direct access to the training data, no knowledge of the algorithm used and no source code of the model. The attacker only queries the model and observes the response.
+Consider a typical ML pipeline shown below that is gated behind an API, wherein the only way to use the model is to send a query and observe an response. In this example, we assume a blackbox setting: the attacker does **NOT** have direct access to the training data, no knowledge of the algorithm used and no source code of the model. The attacker only queries the model and observes the response.
+
+![alt text](images/AdvML101)
 
 Here are some of the adversarial ML attacks that an adversary can perform on this system:
 | Attack 		 				| Overview	|
