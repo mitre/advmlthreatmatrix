@@ -27,7 +27,7 @@ However, there are two main differences:
 
 
 
-![Adversarial ML Threat Matrix](/resources/advmlthreatmatrix.png)
+![Adversarial ML Threat Matrix](/images/advmlthreatmatrix.png)
 
 ## Adversarial ML Matrix - Description
 

@@ -38,7 +38,7 @@ We recommend digging into [Adversarial ML Threat Matrix](/pages/adversarial-ml-t
 
 
 
-![alt text](resources/advmlthreatmatrix.png)
+![alt text](images/advmlthreatmatrix.png)
 
 
 ## Contributors
