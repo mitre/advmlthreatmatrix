@@ -1,4 +1,4 @@
-## Adversarial ML Threat Matrix 
+# Adversarial ML Threat Matrix 
 
 ## Structure of Adversarial ML Threat Matrix
 Because the Adversarial ML Threat Matrix is fashioned after [ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/), it retains the terminologies: for instance, the column heads of the Threat Matrix are called "Tactics" and the individual entities are called "Techniques".
