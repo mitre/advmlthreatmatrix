@@ -79,7 +79,7 @@ We chose **real world attacks on production ML systems** based on:
 -   Via an exposed API interface, the team performed an online evasion attack by replaying the adversarial examples, which helped achieve this goal.
 -   This operation had a combination of traditional ATT&CK enterprise techniques such as finding Valid account, and Executing code via an API -- all interleaved with adversarial ML specific steps such as offline and online evasion examples.
 
-![Msft1](/images/Msft1.png)
+![Msft1](/images/Msft1.PNG)
 
 ### Bosch - EdgeAI 
 **Summary of Incident:** : Bosch team performed a research exercise on an internal edge AI system with a dual intention to extract the model and craft adversarial example to evade
@@ -93,7 +93,7 @@ We chose **real world attacks on production ML systems** based on:
   - offline and online evasion examples.
 - The team was also able to reconstruct the edge ai system with extracted model
 
-![Bosch1](/images/Bosch1.png)
+![Bosch1](/images/Bosch1.PNG)
 
 ### Microsoft – EdgeAI 
 **Summary of Incident:** The Azure Red Team performed a red team exercise on a new Microsoft product designed for running AI workloads at the Edge.  
