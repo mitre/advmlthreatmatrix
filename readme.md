@@ -1,7 +1,7 @@
 # Table of Contents
 1. [Adversarial ML 101](/pages/adversarial-ml-101.md)
 2. [Adversarial ML Threat Matrix](/pages/adversarial-ml-threat-matrix.md)
-    - [Why Adversarial ML Threat Matrix?](/pages/why-adversarial-ml-threat-matrix.md)
+    - [Why Adversarial ML Threat Matrix?](#why-adversarial-ml-threat-matrix.md)
     - [Structure of Adversarial ML Threat Matrix](/pages/structure-of-adversarial-ml-threat-matrix.md)
     - [Things to keep in mind before you use the framework](/pages/things-to-keep-in-mind-before-you-use-the-framework.md)
 8. [Case Studies Page](/pages/case-studies-page.md)
