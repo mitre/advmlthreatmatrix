@@ -41,6 +41,14 @@ Adversaries may leverage publicly available information about an organization th
 
 Adversaries may attempt to identify machine learning pipelines that exist on the system and gather information about them, including the software stack used to train and deploy models, training and testing data repositories, model repositories, and software repositories containing algorithms. This information can be used to identify targets for further collection, exfiltration, or disruption, or to tailor and improve attacks.
 
+> ##### Reveal ML Ontology
+>
+> stub
+>
+> ##### Reveal ML Model Family
+>
+> stub
+
 #### Gathering Datasets
 
 Adversaries may collect datasets similar to those used by a particular organization or in a specific approach. Datasets may be identified when [Acquiring OSINT Information](#Acquire-OSINT-Information). This may allow the adversary to replicate a private model's funcionality, constituting [Intellectual Property Theft](#Stolen-Intellectual-Property), or enable the adversary to carry out other attacks such as an [Evasion Attack](#Evasion-Attack).
@@ -52,6 +60,14 @@ Stub
 #### Model Replication
 
 Stub
+
+> ##### Exploit API
+>
+> An adversary my replicate a machine learning model's functionality by exploiting its inference API.
+>
+> ##### Pre-Trained Weights
+>
+> Once made publicly available, an adversary may use pre-trained weights to replicate a model's functionality.
 
 ### ML Model Stealing
 
@@ -85,8 +101,7 @@ Adversaries may leverage external-facing remote services to initially access and
 
 Access to [Valid Accounts](https://attack.mitre.org/techniques/T1078) to use the service is often a requirement, which could be obtained through credential pharming or by obtaining the credentials from users after compromising the enterprise network. Access to remote services may be used as a redundant or persistent access mechanism during an operation.
 
-
-#### Pre-trained ML Model with Backdoor
+#### Pre-Trained ML Model with Backdoor
 
 Adversaries may gain initial access to a system by compromising portions of the ML supply chain. This could include GPU hardware, data and its annotations, parts of the ML software stack, or the model itself. In some instances the attacker will need secondary access to fully carry out an attack using compromised components of the supply chain.
 
@@ -98,9 +113,17 @@ Organizations often grant elevated access to second or third-party external prov
 
 ### Execution
 
-#### Unsafe ML Model Execution
+#### Execute Unsafe ML Models
 
-An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-Trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
+An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-Trained Model with Backdoor](#Pre-Trained-Model-with-Backdoor).
+
+> ##### ML Models from Compromised Sources
+>
+> An adversary may introduce an unsafe model from a compromised source.
+>
+> ##### Pickle Embedding
+>
+> An adversary may use pickle embedding to introduce malicious data payloads.
 
 #### Native API
 
@@ -141,6 +164,14 @@ Adversaries can create data inputs that prevent a machine learning model from po
 
 Example evasion attacks include Simple Transformation, Common Corruption, Adversarial Examples, Happy String
 
+> ##### Offline Evasion
+>
+> Simple Transformation, Common Corruption, Adversarial Examples, Happy Strings
+>
+> ##### Online Evasion
+>
+> Simple Transformation, Common Corruption, Adversarial Examples, Happy Strings
+
 #### Model Poisoning
 
 Adversaries can train machine learning that are performant, but contain backdoors that produce inference errors when presented with input containing a trigger defined by the adversary. A model with a backdoor can be introduced by an innocent user via a [pre-trained model with backdoor](#Pre-Trained-Model-with-Backdoor) or can be a result of [Data Poisoning](#Data-Poisoning). This backdoored model can be exploited at inference time with an [Evasion Attack](#Evasion-Attack)
@@ -149,21 +180,21 @@ Adversaries can train machine learning that are performant, but contain backdoor
 
 Adversaries may attempt to poison datasets used by a ML system by modifying the underlying data or its labels. This allows the adversary to embed vulnerabilities in ML models trained on the data that may not be easily detectable. The embedded vulnerability can be activated at a later time by providing the model with data containing the trigger. Data Poisoning can help enable attacks such as [ML Model Evasion](#Evasion-Attack).
 
-##### Tainting Data from Acquisition - Label Corruption
-
-Adversaries may attempt to alter labels in a training set. This would cause a model to misclassify an input
-
-##### Tainting Data from Open Source Supply Chains
-
-Adversaries may attempt to add their own data to an open source dataset which could create a classfication backdoor.
-
-##### Tainting Data from Acquisition - Chaff Data
-
-Adding noise to a dataset would lower the accuracy of the model, potentially making the model more vulnerable to misclassifications
-
-##### Tainting Data in Training - Label Corruption
-
-Changing training labels could create a backdoor in the model, such that a malicious input would always be classified to the benefit of the adversary
+> ###### Tainting Data from Acquisition - Label Corruption
+>
+> Adversaries may attempt to alter labels in a training set. This would cause a model to misclassify an input
+>
+> ###### Tainting Data from Open Source Supply Chains
+>
+> Adversaries may attempt to add their own data to an open source dataset which could create a classfication backdoor.
+>
+> ###### Tainting Data from Acquisition - Chaff Data
+>
+> Adding noise to a dataset would lower the accuracy of the model, potentially making the model more vulnerable to misclassifications
+>
+> ###### Tainting Data in Training - Label Corruption
+>
+> Changing training labels could create a backdoor in the model, such that a malicious input would always be classified to the benefit of the adversary
 
 ### Exfiltration
 
@@ -171,13 +202,13 @@ Changing training labels could create a backdoor in the model, such that a malic
 
 Adversaries may exfiltrate private information related to machine learning models via their inference APIs. Additionally, adversaries can use these APIs to create copy-cat or proxy models.
 
-#### Membership Inference Attack
-
-The membership of a data sample in a training set may be infered by an adversary with access to an inference API.
-
-#### ML Model Inversion
-
-Machine learning models' training data could be reconstructed by exploiting an inference API.
+> ##### Membership Inference Attack
+>
+> The membership of a data sample in a training set may be infered by an adversary with access to an inference API.
+>
+> ##### ML Model Inversion
+>
+> Machine learning models' training data could be reconstructed by exploiting an inference API.
 
 #### ML Model Stealing
 
@@ -195,21 +226,21 @@ Adversaries may attack the integrity of machine learning models by crafting adve
 
 #### Defacement
 
-Data Poisoning
-
 Adversaries can create data inputs that prevent a machine learning model from positively identifying the data sample. This technique can be used to evade detection on the network, or to evade a downstream task where machine learning is utilized.
 
 Example evasion attacks include Simple Transformation, Common Corruption, Adversarial Examples, Happy String
 
-#### Stolen Intellectual Property
-
-Adversaries may steal intellectual property by [Model Replication](#ML-Model-Replication) or [Model Stealing](#ML-Model-Stealing).
+Exploit Open CVEs in Package
 
 #### Denial of Service
 
 Adversaries may target different Machine Learning services to conduct a DoS.
 
 One example of this type of attack is Sponge attack.
+
+#### Stolen Intellectual Property
+
+Adversaries may steal intellectual property by [Model Replication](#ML-Model-Replication) or [Model Stealing](#ML-Model-Stealing).
 
 #### Data Encrypted for Impact
 
