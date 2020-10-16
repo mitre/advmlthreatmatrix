@@ -4,7 +4,6 @@
     - [Why Adversarial ML Threat Matrix?](/pages/why-adversarial-ml-threat-matrix.md)
     - [Structure of Adversarial ML Threat Matrix](/pages/structure-of-adversarial-ml-threat-matrix.md)
     - [Things to keep in mind before you use the framework](/pages/things-to-keep-in-mind-before-you-use-the-framework.md)
-    - [Adversarial ML Threat Matrix] 
 8. [Case Studies Page](/pages/case-studies-page.md)
     - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
     - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
@@ -20,6 +19,10 @@
 
 The goal of this project is to position attacks on ML systems in an ATT&CK-style framework so that security analysts can orient themselves
 in this new and upcoming threats.
+
+If you are new to how ML systems can be attacked, we suggest starting at this no-frills [Adversarial ML 101](/pages/adversarial-ml-101.md) aimed at security analysts. 
+
+Or if you want to dive right in, head to [Adversarial ML Threat Matrix](/pages/adversarial-ml-threat-matrix.md)
 
 ![alt text](resources/advmlthreatmatrix.png)
 
@@ -64,8 +67,9 @@ Jan/Feb 2021.Please register here for the workshop for more hands on feedback se
 
  
  ## Contact Us
-For corrections and improvement, see [Feedback](#feedback)
+For corrections and improvement, see [Feedback](#feedback-and-getting-involved)
 
--  Our public email group is advmlthreatmatrix@googlegroups.com. This emails all the contributors. 
+For questions/comments/discussion: 
+-  Our public email group is advmlthreatmatrix@googlegroups.com. This emails all the members of the distribution group. 
 -  For private questions/comments, please email: <Ram.Shankar@microsoft.com> and <Mikel@mitre.org>
 
