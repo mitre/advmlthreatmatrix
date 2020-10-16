@@ -1,13 +1,22 @@
 ## Case Studies Page
+Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as this document demonstrates these proof-of-concept attacks are now being seen in-the-wild. To In production settings ML systems are trainined on PII, trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. Average users have gamed algorithms, security researchers, red teams, and bad actors are actively attacking ML systems.
 
-We chose **real world attacks on production ML systems** based on:
-1.  Range of Attacks: evasion, poisoning, model replication and exploiting traditional software flaws.
-2.  Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team
-3.  Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on- presmise, ML models on edge
-4.  Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots
+The below case-studies are an effort to shine a light on successful attacks against ML systems in production. These case-studies include a range of attacks on ML systems used in both "security-sensitive" applications like cybersecurity, and non-security-sensitive applications like chatbots. 
+
+We welcome any comments, feedback, or new case-studies! Before submitting a case-study, consider that the attack
+
+1.  Exploits one or more ML vulnerabilities 
+    - Evasion
+    - Poisoning 
+    - Model replication
+    - A bug in code that enabled any of the above
+2.  The attack was against a production system
+    - Machine Learning as a Service (MLaaS)
+    - ML models hosted on cloud (AzureML, AWS, GCP, etc), on-prem, or on the edge (Mobile, IOT, etc)
+3.  Most importantly, you have permission to share the information. Please follow the proper channels before reporting a new attack. If you are unsure of how best disclose, the team here is happy to help coordinate responsible disclosure. 
 
 ### ClearviewAI Misconfiguration 
-**Summary of Incident:** Clearview AI's source code repository, though password protected, was misconfigured. This allowed an external researcher to register as a new user to the code repository and gain access to Clearview AI's credentials, keys to cloud storage buckets containing 70K video samples, copies of its applications and Slack tokens.
+**Summary of Incident:** Clearview AI's source code repository, though password protected, was misconfigured to allow an arbitrary user to register an account. This allowed an external researcher to gain access to a private code repository that contained Clearview AI production credentials, keys to cloud storage buckets containing 70K video samples, and copies of its applications and Slack tokens. With access to training data, a bad-actor has the ability to cause an arbitrary misclassificaion in the deployed model. 
 
 **Reported by:** Mossab Hussein (@mossab_hussein)
 
@@ -18,7 +27,7 @@ We chose **real world attacks on production ML systems** based on:
 - In this scenario, a security researcher gained initial access to via a "Valid Account" that was created through a misconfiguration. No Adversarial ML techniques were used.
 - these kinds of attacks illustrate that any attempt to secure ML system should be on top of "traditional" good cybersecurity hygiene such as locking down the system with least privileges, multi factor authentication and monitoring and auditing.
 
-![ClearviewAI](/images/ClearviewAI.png)
+![ClearviewAI](/images/ClearviewAI.png =200x)
 
 ### GPT-2 Model Replication 
 **Summary of Incident:** : OpenAI built GPT-2, a powerful natural language model and calling it "too dangerous to release" adopted a staged-release process to incrementally release 1.5 Billion parameter model. Before the 1.5B parameter model could be released by OpenAI, two ML researchers replicated the model and released it to the public. *Note this is a model replication attack: Here, attacker is able to recover functionally equivalent model (but generally with lower fidelity), perhaps to do reconnaissance (See proof point attack). In Model stealing, the fidelity of the model is comparable to the original, victim model.*
