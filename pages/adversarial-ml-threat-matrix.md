@@ -35,11 +35,11 @@ However, there are two main differences:
 
 #### ![AdvML](/images/color_advml.png)Acquire OSINT Information
 
-Adversaries may leverage publicly available information about an organization that could identify where or how machine learning is being used in a system, and help tailor an attack to make it more effective. These sources of information include technical publications, blog posts, press releases, software repositories, public data repositories, and social media postings.
+Adversaries may leverage publicly available information, or Open Source Intelligence (OSINT), about an organization that could identify where or how machine learning is being used in a system, and help tailor an attack to make it more effective. These sources of information include technical publications, blog posts, press releases, software repositories, public data repositories, and social media postings.
 
 #### ![AdvML](/images/color_advml.png)ML Model Discovery
 
-Adversaries may attempt to identify machine learning pipelines that exist on the system and gather information about them, including the software stack used to train and deploy models, training and testing data repositories, model repositories, and software repositories containing algorithms. This information can be used to identify targets for further collection, exfiltration, or disruption, or to tailor and improve attacks.
+Adversaries may attempt to identify machine learning pipelines that exist on the system and gather information about them, including the software stack used to train and deploy models, training and testing data repositories, model repositories, and software repositories containing algorithms. This information can be used to identify targets for further collection, exfiltration, or disruption, or to tailor and improve attacks. Several of these attacks are discussed here [1,2].
 
 > ##### ![AdvML](/images/color_advml.png)Reveal ML Ontology
 >
@@ -47,7 +47,7 @@ Adversaries may attempt to identify machine learning pipelines that exist on the
 >
 > ##### ![AdvML](/images/color_advml.png)Reveal ML Model Family
 >
-> stub
+> One exploratory attack that adversaries may use is model inversion, which allows the attacker to reveal the underlying ML model and/or model family [1].
 
 #### ![AdvML](/images/color_advml.png)Gathering Datasets
 
@@ -55,7 +55,7 @@ Adversaries may collect datasets similar to those used by a particular organizat
 
 #### ![AdvML](/images/color_advml.png)Exploit Physical Environment
 
-Stub
+In addition to the attacks that take place purely in the digital domain, adversaries may also exploit the physical environment for their attacks. Recent work has show successful false positive and evasion attacks using physically printed patterns that are placed into scenes to disrupt and attack machine learning models [3,4]. MITRE has recently created a dataset based on these physically printed patterns to help researchers and practicioners better understand these attacks [5].
 
 #### ![AdvML](/images/color_advml.png)Model Replication
 
@@ -245,6 +245,13 @@ To maximize impact on the target organization, malware designed for encrypting d
 #### ![AdvML](/images/color_advml.png)Stop System Shutdown/Reboot
 
 Stub
+
+### References
+[[1](https://arxiv.org/pdf/1810.00069.pdf)] Chakraborty, Anirban, et al. "Adversarial attacks and defences: A survey." arXiv preprint arXiv:1810.00069 (2018).
+[[2](https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8269-draft.pdf)] Tabassi, Elham, et al. "A Taxonomy and Terminology of Adversarial Machine Learning." (2019).
+[[3](https://s3.observador.pt/wp-content/uploads/2017/08/08133934/1707-08945.pdf)] Evtimov, Ivan, et al. "Robust physical-world attacks on machine learning models." arXiv preprint arXiv:1707.08945 2.3 (2017): 4.
+[[4](https://arxiv.org/pdf/1910.11099.pdf)] Xu, Kaidi, et al. "Adversarial T-shirt! evading person detectors in a physical world." In Proceedings of the European Conference on Computer Vision, 2020.
+[[5](https://arxiv.org/pdf/1912.08166.pdf)] Braunegg, A., et al. "APRICOT: A Dataset of Physical Adversarial Attacks on Object Detection." In Proceedings of the European Conference on Computer Vision, 2020.
 
 # Next Recommended Reading
 See how the matrix can be used via [Case Studies Page](/pages/case-studies-page.md)
