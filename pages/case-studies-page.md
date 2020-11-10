@@ -9,6 +9,7 @@
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
+  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -207,6 +208,39 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 
 **Source:**
 - McAfee Advanced Threat Research
+
+----
+## Bypassing Cylance's AI Malware Detection
+
+**Summary of Incident:** Researchers at Skylight were able to create a universal bypass string that when appended to a malicious file evades detection by Cylance's AI Malware detector.
+
+**Mapping to Adversarial Threat Matrix :**
+- The researchers read publicly available information and enabled verbose logging to understand the inner workings of the ML model, particularly around reputation scoring.
+- The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model were an override for the core ML model.
+- Using this knowledge, the researchers fused attributes of known good files with malware. Due to the secondary model overriding the primary, the researchers were effectively able to bypass the ML model.
+
+### Convert to graphic
+
+Reconnaissance
+Gathering datasets
+- Gather verbose logging
+
+Acquire OSINT information:
+- Public documentation
+
+Model Evasion
+Evasion
+- Offline evasion
+
+Evasion
+- Online evasion
+
+**Reported by:**
+Ken Luu (@devianz\_)
+
+
+**Source:**
+- https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
 
 
 ----

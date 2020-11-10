@@ -37,7 +37,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
-
+  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
 
 
 ![alt text](images/AdvMLThreatMatrix.jpg)
