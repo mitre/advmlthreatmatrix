@@ -35,6 +35,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
   - [Microsoft - Azure Service - Evasion](/pages/case-studies-page.md#microsoft---azure-service)
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
+  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
 
 
 
