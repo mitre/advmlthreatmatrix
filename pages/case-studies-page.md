@@ -7,6 +7,7 @@
   - [Microsoft - Azure Service - Evasion](/pages/case-studies-page.md#microsoft---azure-service)
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
+  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -164,6 +165,28 @@ MITRE AI Red Team
 
 **Source:** 
 None
+
+----
+## Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate
+
+**Summary of Incident:**
+Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs. A research group at UC Berkeley utilized these public endpoints to create an "imitation model" with near-production, state-of-the-art translation quality. Beyond demonstrating that IP can be stolen from a black-box system, they used the imitation model to successfully transfer adversarial examples to the real production services. These adversarial inputs successfully cause targeted word flips, vulgar outputs, and dropped sentences on Google Translate and Systran Translate websites.
+
+**Mapping to Adversarial Threat Matrix:**
+- Using published research papers, the researchers gathered similar datasets and model architectures that these translation services used
+- They abuse a public facing application to query the model and produce machine translated sentence pairs as training data
+- Using these translated sentence pairs, researchers trained a substitute model (model replication)
+- The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
+
+<img src="/images/AttackOnMT.png" width="650" height="150"/>
+
+**Reported by:**
+- Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong)
+
+**Source:**
+- https://arxiv.org/abs/2004.15015
+- https://www.ericswallace.com/imitation
+
 
 ----
 # Contributing New Case Studies
