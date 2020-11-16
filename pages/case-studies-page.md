@@ -1,8 +1,8 @@
 ## Case Studies Page
-
   
-  - VirusTotal Poisoning (/pages/case-studies-page.md#VirusTotal-Poisoning)
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   - [Attack on Machine Trasnlation - Google Translate, Bing Translator, Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-systran-translate)
+  - [Camera Hijack Attack on Face Recognition System]()
   - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
   - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
   - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
@@ -60,6 +60,20 @@ None
 - https://arxiv.org/abs/2004.15015
 - https://www.ericswallace.com/imitation
 
+----
+## Camera Hijack Attack on Face Recognition System
+**Summary of Incident:**
+
+**Mapping to Adversarial Threat Matrix:**
+- The attackers bought customized low-end mobile phones, customized android ROMs, specific “virtual camera app”, identity information and face photos.
+- The attackers used a software to turn static photos into videos, such as eyes blinking. Then the attackers use the purchased low-end mobile phone to open the “virtual camera APP”, and import the video into this app.
+- The attacker registered an account with the victim's identity information. And in the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera APP. Then the attacker successfully impersonated the victim's account
+
+**Reported by:** 
+- Henry Xuef
+
+**Source:** 
+None 
 
 ----
 
