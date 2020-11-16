@@ -62,7 +62,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
 | McAfee              | Christiaan Beek |
 | Ant/Alibaba Group   | Henry Xuef | 
-| Other | Kenny Song |
+| Citadel AI | Kenny Song |
 
 ## Feedback and Getting Involved 
 
