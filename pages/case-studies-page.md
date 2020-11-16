@@ -27,6 +27,8 @@ Attacks on machine learning (ML) systems are being developed and released with i
 - Using these translated sentence pairs, researchers trained a substitute model ("model stealing / model replication")
 - The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
 
+![alt_text](/images/AttackOnMT.png)
+
 **Reported by:**
 - Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong) 
 
