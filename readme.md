@@ -47,7 +47,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 
 | **Organization**    | **Contributors**    |
 | :---                | :---                |
-| Microsoft           | Ram Shankar Siva Kumar, Hyrum Anderson, Suzy Schapperle, Blake Strom, Madeline Carmichael, Matt Swann, Mark Russinovich, Nick Beede, Kathy Vu, Andi Comissioneru, Sharon Xia, Mario Goertzel, Jeffrey Snover, Derek Adam, Deepak Manohar, Bhairav Mehta, Peter Waxman, Abhishek Gupta, Ann Johnson, Andrew Paverd, Pete Bryan, Roberto Rodriguez  |
+| Microsoft           | Ram Shankar Siva Kumar, Hyrum Anderson, Will Pearce, Suzy Schapperle, Blake Strom, Madeline Carmichael, Matt Swann, Mark Russinovich, Nick Beede, Kathy Vu, Andi Comissioneru, Sharon Xia, Mario Goertzel, Jeffrey Snover, Derek Adam, Deepak Manohar, Bhairav Mehta, Peter Waxman, Abhishek Gupta, Ann Johnson, Andrew Paverd, Pete Bryan, Roberto Rodriguez  |
 | MITRE               | Mikel Rodriguez, Christina Liaghati, Keith Manville, Michael Krumdick, Josh Harguess |
 | Bosch               | Manojkumar Parmar |
 | IBM                 | Pin-Yu Chen       |
@@ -60,6 +60,9 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Cardiff University  | Pete Burnap |
 | Software Engineering Institute/Carnegie Mellon University | Nathan M. VanHoudnos | 
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
+| McAfee              | Christiaan Beek |
+| Ant/Alibaba Group   | Henry Xuef | 
+| Other | Kenny Song |
 
 ## Feedback and Getting Involved 
 
