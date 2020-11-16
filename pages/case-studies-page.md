@@ -33,7 +33,7 @@ After digging more into the discovery was made that someone used 'metame' a meta
 - Several vendors started to classify the files as the ransomware family even though most of them won’t run
 - Poisoning the ML model(s) used to identify and classify this ransomware family
 
-![altText](/images/VirusTotal.png)
+<img src="/images/VirusTotal.png" width="450" height="150"/>
 
 **Reported by:**
 - Christiaan Beek (@ChristiaanBeek) - McAfee ATR team
@@ -51,7 +51,7 @@ None
 - Using these translated sentence pairs, researchers trained a substitute model ("model stealing / model replication")
 - The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
 
-![alt_text](/images/AttackOnMT.png)
+<img src="/images/AttackOnMT.png" width="650" height="150"/>
 
 **Reported by:**
 - Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong) 
@@ -69,7 +69,7 @@ None
 - The attackers used a software to turn static photos into videos, such as eyes blinking. Then the attackers use the purchased low-end mobile phone to open the “virtual camera APP”, and import the video into this app.
 - The attacker registered an account with the victim's identity information. And in the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera APP. Then the attacker successfully impersonated the victim's account
 
-![alttext](/images/FacialRecognitionANT.png)
+<img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
 
 **Reported by:** 
 - Henry Xuef
