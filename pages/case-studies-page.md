@@ -1,5 +1,8 @@
 ## Case Studies Page
-
+  
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
+  - [Attack on Machine Trasnlation - Google Translate, Bing Translator, Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-systran-translate)
+  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
   - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
   - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
   - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
@@ -15,6 +18,64 @@ Attacks on machine learning (ML) systems are being developed and released with i
 2. Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team.
 3. Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on-premise, ML models on edge.
 4. Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots.
+
+----
+## VirusTotal Poisoning 
+
+**Summary of Incident:** : An increase was noticed of a certain ransomware family that was out of the ordinary. Investigating the case, many samples of that particular
+ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Investigating the samples, based on string similarity they were all equal. Based on Code similarity the samples were between 98 and 74 percent equal. Interesting enough the compile time was the same for all the samples. 
+After digging more into the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate an original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family. 
+
+**Mapping to Adversarial Threat Matrix:**
+
+- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants
+- Actor uploaded ‘mutant’ samples to platform
+- Several vendors started to classify the files as the ransomware family even though most of them won’t run
+- Poisoning the ML model(s) used to identify and classify this ransomware family
+
+<img src="/images/VirusTotal.png" width="450" height="150"/>
+
+**Reported by:**
+- Christiaan Beek (@ChristiaanBeek) - McAfee ATR team
+
+**Source:**
+None
+
+----
+## Attack on Machine Translation Service - Google Translate, Bing Translator, Systran Translate  
+**Summary of Incident:** Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs. These public endpoints can be used to steal an "imitation model" with near-production, state-of-the-art translation quality. Beyond demonstrating that IP can be stolen from a black-box system, the imitation model was used  successfully transfer adversarial examples to the real production services. These adversarial inputs successfully cause targeted word flips, vulgar outputs, and dropped sentences on Google Translate and Systran Translate websites.
+
+**Mapping to Adversarial Threat Matrix:**
+- Using published research papers, the researchers gathered similar datasets and model architectures that these translation services used
+- They exploit a public facing application to query the model and produce machine translated sentence pairs as training data
+- Using these translated sentence pairs, researchers trained a substitute model ("model stealing / model replication")
+- The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
+
+<img src="/images/AttackOnMT.png" width="650" height="150"/>
+
+**Reported by:**
+- Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong) 
+
+**Source:**
+- https://arxiv.org/abs/2004.15015
+- https://www.ericswallace.com/imitation
+
+----
+## Camera Hijack Attack on Facial Recognition System
+**Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.  
+
+**Mapping to Adversarial Threat Matrix:**
+- The attackers bought customized low-end mobile phones, customized android ROMs, specific “virtual camera app”, identity information and face photos.
+- The attackers used a software to turn static photos into videos, such as eyes blinking. Then the attackers use the purchased low-end mobile phone to open the “virtual camera APP”, and import the video into this app.
+- The attacker registered an account with the victim's identity information. And in the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera APP. Then the attacker successfully impersonated the victim's account
+
+<img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
+
+**Reported by:** 
+- Henry Xuef
+
+**Source:** 
+None 
 
 ----
 
@@ -40,7 +101,7 @@ Attacks on machine learning (ML) systems are being developed and released with i
 
 **Summary of Incident:** : OpenAI built GPT-2, a powerful natural language model and adopted a staged-release process to incrementally release 1.5 Billion parameter model. Before the 1.5B parameter model could be released by OpenAI eventually, two ML researchers replicated the model and released it to the public. *Note this is an example of model replication NOT model model extraction. Here, the attacker is able to recover a functionally equivalent model but generally with lower fidelity than the original model, perhaps to do reconnaissance (See ProofPoint attack). In Model extraction, the fidelity of the model is comparable to the original, victim model.*
 
-**Mapping to Adversarial Threat Matrix :**
+**Mapping to Adversarial Threat Matrix:**
 -   Using public documentation about GPT-2, ML researchers gathered similar datasets used during the original GPT-2 training.
 -   Next, they used a different publicly available NLP model (called Grover) and modified Grover's objective function to reflect
 GPT-2's objective function.
@@ -66,7 +127,7 @@ GPT-2's objective function.
 
 **Summary of Incident:** : CVE-2019-20634 describes how ML researchers evaded ProofPoint's email protection system by first building a copy-cat email protection ML model, and using the insights to evade the live system.
 
-**Mapping to Adversarial Threat Matrix :**
+**Mapping to Adversarial Threat Matrix:**
 -   The researchers first gathered the scores from the Proofpoint's ML system used in email email headers.
 -   Using these scores, the researchers replicated the ML mode by building a "shadow" aka copy-cat ML model.
 -   Next, the ML researchers algorithmically found samples that this "offline" copy cat model.
@@ -89,7 +150,7 @@ GPT-2's objective function.
 
  **Summary of Incident:** Microsoft created Tay, a twitter chatbot for 18- to 24- year-olds in the U.S. for entertainment purposes. Within 24 hours of its deployment, Tay had to be decommissioned because it tweeted reprehensible words.
  
-**Mapping to Adversarial Threat Matrix :**
+**Mapping to Adversarial Threat Matrix:**
 -   Tay bot used the interactions with its twitter users as training data to improve its conversations.
 -   Average users of Twitter coordinated together with the intent of defacing Tay bot by exploiting this feedback loop.
 -   As a result of this coordinated attack, Tay's training data was poisoned which led its conversation algorithms to generate more reprehensible material.
@@ -107,7 +168,7 @@ GPT-2's objective function.
 **Summary of Incident:** : The Azure Red Team and Azure Trustworthy ML team performed a red team exercise on an internal Azure service with the intention of disrupting its service.
 
 **Reported by:** Microsoft 
-**Mapping to Adversarial Threat Matrix :**
+**Mapping to Adversarial Threat Matrix:**
 -   The team first performed reconnaissance to gather information about the target ML model.
 -   Then, using a valid account the team found the model file of the target ML model and the necessary training data.
 -   Using this, the red team performed an offline evasion attack by methodically searching for adversarial examples.
