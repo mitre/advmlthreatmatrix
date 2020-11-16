@@ -1,6 +1,8 @@
 ## Case Studies Page
 
   
+  - VirusTotal Poisoning (/pages/case-studies-page.md#VirusTotal-Poisoning)
+  - [Attack on Machine Trasnlation - Google Translate, Bing Translator, Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-systran-translate)
   - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
   - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
   - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
@@ -16,6 +18,28 @@ Attacks on machine learning (ML) systems are being developed and released with i
 2. Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team.
 3. Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on-premise, ML models on edge.
 4. Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots.
+
+----
+## VirusTotal Poisoning 
+
+**Summary of Incident:** : An increase was noticed of a certain ransomware family that was out of the ordinary. Investigating the case, many samples of that particular
+ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Investigating the samples, based on string similarity they were all equal. Based on Code similarity the samples were between 98 and 74 percent equal. Interesting enough the compile time was the same for all the samples. 
+After digging more into the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate an original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family. 
+
+**Mapping to Adversarial Threat Matrix:**
+
+- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants
+- Actor uploaded ‘mutant’ samples to platform
+- Several vendors started to classify the files as the ransomware family even though most of them won’t run
+- Poisoning the ML model(s) used to identify and classify this ransomware family
+
+![altText](/images/VirusTotal.png)
+
+**Reported by:**
+- Christiaan Beek (@ChristiaanBeek) - McAfee ATR team
+
+**Source:**
+None
 
 ----
 ## Attack on Machine Translation Service - Google Translate, Bing Translator, Systran Translate  
