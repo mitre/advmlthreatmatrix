@@ -10,6 +10,7 @@
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
+  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -228,6 +229,22 @@ Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notifi
 **Source:**
 - https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
 
+
+## Camera Hijack Attack on Facial Recognition System
+**Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.
+
+**Mapping to Adversarial Threat Matrix:**
+- The attackers bought customized low-end mobile phones, customized android ROMs, specific “virtual camera app”, identity information and face photos.
+- The attackers used a software to turn static photos into videos, such as eyes blinking. Then the attackers use the purchased low-end mobile phone to open the “virtual camera APP”, and import the video into this app.
+- The attacker registered an account with the victim's identity information. And in the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera APP. Then the attacker successfully impersonated the victim's account
+
+<img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
+
+**Reported by:**
+- Henry Xuef
+
+**Source:**
+None
 
 ----
 # Contributing New Case Studies
