@@ -8,6 +8,7 @@
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -186,6 +187,27 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 **Source:**
 - https://arxiv.org/abs/2004.15015
 - https://www.ericswallace.com/imitation
+
+## VirusTotal Poisoning
+
+**Summary of Incident:** : An increase was noticed of a certain ransomware family that was out of the ordinary. Investigating the case, many samples of that particular
+ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Investigating the samples, based on string similarity they were all equal. Based on Code similarity the samples were between 98 and 74 percent equal. Interesting enough the compile time was the same for all the samples.
+After digging more into the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate an original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
+
+**Mapping to Adversarial Threat Matrix:**
+
+- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants
+- Actor uploaded ‘mutant’ samples to platform
+- Several vendors started to classify the files as the ransomware family even though most of them won’t run
+- Poisoning the ML model(s) used to identify and classify this ransomware family
+
+<img src="/images/VirusTotal.png" width="450" height="150"/>
+
+**Reported by:**
+- Christiaan Beek (@ChristiaanBeek) - McAfee ATR team
+
+**Source:**
+None
 
 
 ----
