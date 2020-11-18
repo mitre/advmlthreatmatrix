@@ -7,7 +7,7 @@
   - [Microsoft - Azure Service - Evasion](/pages/case-studies-page.md#microsoft---azure-service)
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
-  - [Imitating and Attacking Machine Translation Systems - Google, Bing, and Systran](/pages/case-studies-page.md#imitating-and-attacking-machine-translation-systems---google-bing-and-systran)
+  - [Attack on Machine Translation - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation---google-translate-bing-translator-and-systran-translate)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -178,8 +178,10 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 - Using these translated sentence pairs, researchers trained a substitute model (model replication)
 - The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
 
+<img src="/images/AttackOnMT.png" width="650" height="150"/>
+
 **Reported by:**
-- Kenny Song
+- Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong)
 
 **Source:**
 - https://arxiv.org/abs/2004.15015
