@@ -216,7 +216,7 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 
 **Mapping to Adversarial Threat Matrix :**
 - The researchers read publicly available information and enabled verbose logging to understand the inner workings of the ML model, particularly around reputation scoring.
-- The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model were an override for the core ML model.
+- The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model overrode the decision of the core ML model.
 - Using this knowledge, the researchers fused attributes of known good files with malware. Due to the secondary model overriding the primary, the researchers were effectively able to bypass the ML model.
 
 ### Convert to graphic
