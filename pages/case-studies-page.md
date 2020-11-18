@@ -167,7 +167,7 @@ MITRE AI Red Team
 None
 
 ----
-## Imitating and Attacking Machine Translation Systems - Google, Bing, and Systran
+## Attack on Machine Translation - Google Translate, Bing Translator, and Systran Translate
 
 **Summary of Incident:**
 Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs. A research group at UC Berkeley utilized these public endpoints to create an "imitation model" with near-production, state-of-the-art translation quality. Beyond demonstrating that IP can be stolen from a black-box system, they used the imitation model to successfully transfer adversarial examples to the real production services. These adversarial inputs successfully cause targeted word flips, vulgar outputs, and dropped sentences on Google Translate and Systran Translate websites.
