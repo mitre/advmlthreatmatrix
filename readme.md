@@ -61,6 +61,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Cardiff University  | Pete Burnap |
 | Software Engineering Institute/Carnegie Mellon University | Nathan M. VanHoudnos | 
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
+| Citadel AI | Kenny Song |
 
 ## Feedback and Getting Involved 
 
