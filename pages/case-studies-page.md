@@ -230,6 +230,7 @@ Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notifi
 - https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
 
 
+----
 ## Camera Hijack Attack on Facial Recognition System
 **Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.
 
