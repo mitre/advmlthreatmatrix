@@ -188,6 +188,7 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 - https://arxiv.org/abs/2004.15015
 - https://www.ericswallace.com/imitation
 
+----
 ## VirusTotal Poisoning
 
 **Summary of Incident:** : An increase was noticed of a certain ransomware family that was out of the ordinary. Investigating the case, many samples of that particular
