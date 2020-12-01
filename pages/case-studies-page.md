@@ -225,7 +225,7 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 <img src="/images/cylance.png" alt="Cylance" height="150"/>
 
 **Reported by:**
-Ken Luu (@devianz\_)
+Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notified to us by Ken Luu (@devianz_)
 
 
 **Source:**
