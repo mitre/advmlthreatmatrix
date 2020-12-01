@@ -235,9 +235,10 @@ Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notifi
 **Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.
 
 **Mapping to Adversarial Threat Matrix:**
-- The attackers bought customized low-end mobile phones, customized android ROMs, specific “virtual camera app”, identity information and face photos.
-- The attackers used a software to turn static photos into videos, such as eyes blinking. Then the attackers use the purchased low-end mobile phone to open the “virtual camera APP”, and import the video into this app.
-- The attacker registered an account with the victim's identity information. And in the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera APP. Then the attacker successfully impersonated the victim's account
+- The attackers bought customized low-end mobile phones, customized android ROMs, a specific virtual camera application, identity information and face photos.
+- The attackers used software to turn static photos into videos, adding realistic effects such as blinking eyes. Then the attackers use the purchased low-end mobile phone to import the generated video into the virtual camera app.
+- The attacker registered an account with the victim's identity information. In the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera app.
+- The attacker successfully evaded the face recognition system and impersonated the victim.
 
 <img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
 
