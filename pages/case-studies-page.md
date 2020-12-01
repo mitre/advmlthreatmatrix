@@ -222,21 +222,7 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 - The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model overrode the decision of the core ML model.
 - Using this knowledge, the researchers fused attributes of known good files with malware. Due to the secondary model overriding the primary, the researchers were effectively able to bypass the ML model.
 
-### Convert to graphic
-
-Reconnaissance
-Gathering datasets
-- Gather verbose logging
-
-Acquire OSINT information:
-- Public documentation
-
-Model Evasion
-Evasion
-- Offline evasion
-
-Evasion
-- Online evasion
+<img src="/images/cylance.png" alt="Cylance" height="150"/>
 
 **Reported by:**
 Ken Luu (@devianz\_)
