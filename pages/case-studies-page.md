@@ -197,18 +197,18 @@ After digging more into the discovery was made that someone used 'metame' a meta
 
 **Mapping to Adversarial Threat Matrix:**
 
-- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants
-- Actor uploaded ‘mutant’ samples to platform
-- Several vendors started to classify the files as the ransomware family even though most of them won’t run
-- Poisoning the ML model(s) used to identify and classify this ransomware family
+- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants.
+- Actor uploaded ‘mutant’ samples to platform.
+- Several vendors started to classify the files as the ransomware family even though most of them won’t run.
+- These files could poiso n the ML model(s) used to identify and classify this ransomware family.
 
 <img src="/images/VirusTotal.png" width="450" height="150"/>
 
 **Reported by:**
-- Christiaan Beek (@ChristiaanBeek) - McAfee ATR team
+- Christiaan Beek (@ChristiaanBeek) - McAfee ATR Team
 
 **Source:**
-None
+- McAfee Advanced Threat Research
 
 
 ----
