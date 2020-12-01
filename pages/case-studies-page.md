@@ -243,10 +243,10 @@ Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notifi
 <img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
 
 **Reported by:**
-- Henry Xuef
+- Henry Xuef, Ant Group AISEC Team
 
 **Source:**
-None
+- Ant Group AISEC Team
 
 ----
 # Contributing New Case Studies
