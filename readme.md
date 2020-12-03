@@ -66,7 +66,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Citadel AI | Kenny Song |
 | McAfee              | Christiaan Beek |
 | Unaffiliated | Ken Luu |
-| Ant Group, AISEC Team | Henry Xuef |
+| Ant Group | Henry Xuef |
 
 ## Feedback and Getting Involved 
 
