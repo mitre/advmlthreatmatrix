@@ -237,8 +237,8 @@ Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notifi
 **Mapping to Adversarial Threat Matrix:**
 - The attackers bought customized low-end mobile phones, customized android ROMs, a specific virtual camera application, identity information and face photos.
 - The attackers used software to turn static photos into videos, adding realistic effects such as blinking eyes. Then the attackers use the purchased low-end mobile phone to import the generated video into the virtual camera app.
-- The attacker registered an account with the victim's identity information. In the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera app.
-- The attacker successfully evaded the face recognition system and impersonated the victim.
+- The attackers registered an account with the victim's identity information. In the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera app.
+- The attackers successfully evaded the face recognition system and impersonated the victim.
 
 <img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
 
