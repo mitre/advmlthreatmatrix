@@ -36,6 +36,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
 
 
 
@@ -62,6 +63,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Software Engineering Institute/Carnegie Mellon University | Nathan M. VanHoudnos | 
 | Berryville Institute of Machine Learning | Gary McGraw, Harold Figueroa, Victor Shepardson, Richie Bonett|
 | Citadel AI | Kenny Song |
+| McAfee              | Christiaan Beek |
 
 ## Feedback and Getting Involved 
 
