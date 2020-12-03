@@ -190,7 +190,6 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 - https://www.ericswallace.com/imitation
 
 ----
-<<<<<<< HEAD
 ## VirusTotal Poisoning
 
 **Summary of Incident:** An increase in reports of a certain ransomware family that was out of the ordinary was noticed. In investigating the case, it was observed that many samples of that particular ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Further investigation revealed that based on string similarity, the samples were all equivalent, and based on code similarity they were between 98 and 74 percent similar. Interestingly enough, the compile time was the same for all the samples.  After more digging, the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate the original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
@@ -211,8 +210,6 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 - McAfee Advanced Threat Research
 
 ----
-=======
->>>>>>> e0a0ba3... fixed formatting
 ## Bypassing Cylance's AI Malware Detection
 
 **Summary of Incident:** Researchers at Skylight were able to create a universal bypass string that when appended to a malicious file evades detection by Cylance's AI Malware detector.
