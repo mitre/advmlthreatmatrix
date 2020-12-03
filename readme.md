@@ -28,6 +28,10 @@ We recommend digging into [Adversarial ML Threat Matrix](/pages/adversarial-ml-t
 
 To see the Matrix in action, we recommend seeing the curated case studies
 
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
+  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
+  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
+  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
   - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
   - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
@@ -35,10 +39,6 @@ To see the Matrix in action, we recommend seeing the curated case studies
   - [Microsoft - Azure Service - Evasion](/pages/case-studies-page.md#microsoft---azure-service)
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
-  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
-  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
-  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
-  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
 
 
 ![alt text](images/AdvMLThreatMatrix.jpg)

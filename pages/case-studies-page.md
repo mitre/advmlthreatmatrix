@@ -1,5 +1,9 @@
 ## Case Studies Page
 
+  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
+  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
+  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
+  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [ClearviewAI Misconfiguration](/pages/case-studies-page.md#clearviewai-misconfiguration)
   - [GPT-2 Model Replication](/pages/case-studies-page.md#gpt-2-model-replication)
   - [ProofPoint Evasion](/pages/case-studies-page.md#proofpoint-evasion)
@@ -7,10 +11,6 @@
   - [Microsoft - Azure Service - Evasion](/pages/case-studies-page.md#microsoft---azure-service)
   - [Microsoft Edge AI - Evasion](/pages/case-studies-page.md#microsoft---edge-ai)
   - [MITRE - Physical Adversarial Attack on Face Identification](/pages/case-studies-page.md#mitre---physical-adversarial-attack-on-face-identification)
-  - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
-  - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
-  - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
-  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
   
 
 Attacks on machine learning (ML) systems are being developed and released with increased regularity. Historically, attacks against ML systems have been performed in a controlled academic settings, but as these case-studies demonstrate, attacks are being seen in-the-wild. In production settings ML systems are trained on personally identifiable information (PII), trusted to make critical decisions with little oversight, and have little to no logging and alerting attached to their use. The case-studies were selected because of the impact to production ML systems, and each demonstrates one of the following characteristics.
@@ -19,6 +19,92 @@ Attacks on machine learning (ML) systems are being developed and released with i
 2. Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team.
 3. Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on-premise, ML models on edge.
 4. Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots.
+
+----
+
+## VirusTotal Poisoning
+
+**Summary of Incident:** An increase in reports of a certain ransomware family that was out of the ordinary was noticed. In investigating the case, it was observed that many samples of that particular ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Further investigation revealed that based on string similarity, the samples were all equivalent, and based on code similarity they were between 98 and 74 percent similar. Interestingly enough, the compile time was the same for all the samples.  After more digging, the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate the original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
+
+**Mapping to Adversarial Threat Matrix:**
+
+- The actor used a malware sample from a prevalent ransomware family as a start to create ‘mutant’ variants.
+- The actor uploaded ‘mutant’ samples to the platform.
+- Several vendors started to classify the files as the ransomware family even though most of them won’t run.
+- The ‘mutant‘ samples poisoned the dataset the ML model(s) use to identify and classify this ransomware family.
+
+<img src="/images/VirusTotal.png" width="450" height="150"/>
+
+**Reported by:**
+- Christiaan Beek (@ChristiaanBeek) - McAfee ATR Team
+
+**Source:**
+- McAfee Advanced Threat Research
+
+
+----
+
+## Bypassing Cylance's AI Malware Detection
+
+**Summary of Incident:** Researchers at Skylight were able to create a universal bypass string that when appended to a malicious file evades detection by Cylance's AI Malware detector.
+
+**Mapping to Adversarial Threat Matrix :**
+- The researchers read publicly available information and enabled verbose logging to understand the inner workings of the ML model, particularly around reputation scoring.
+- The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model overrode the decision of the core ML model.
+- Using this knowledge, the researchers fused attributes of known good files with malware. Due to the secondary model overriding the primary, the researchers were effectively able to bypass the ML model.
+
+<img src="/images/cylance.png" alt="Cylance" height="150"/>
+
+**Reported by:**
+Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notified to us by Ken Luu (@devianz_)
+
+
+**Source:**
+- https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
+
+
+----
+
+## Camera Hijack Attack on Facial Recognition System
+**Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.
+
+**Mapping to Adversarial Threat Matrix:**
+- The attackers bought customized low-end mobile phones, customized android ROMs, a specific virtual camera application, identity information and face photos.
+- The attackers used software to turn static photos into videos, adding realistic effects such as blinking eyes. Then the attackers use the purchased low-end mobile phone to import the generated video into the virtual camera app.
+- The attackers registered an account with the victim's identity information. In the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera app.
+- The attackers successfully evaded the face recognition system and impersonated the victim.
+
+<img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
+
+**Reported by:**
+- Henry Xuef, Ant Group AISEC Team
+
+**Source:**
+- Ant Group AISEC Team
+
+
+----
+
+## Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate
+
+**Summary of Incident:**
+Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs. A research group at UC Berkeley utilized these public endpoints to create an "imitation model" with near-production, state-of-the-art translation quality. Beyond demonstrating that IP can be stolen from a black-box system, they used the imitation model to successfully transfer adversarial examples to the real production services. These adversarial inputs successfully cause targeted word flips, vulgar outputs, and dropped sentences on Google Translate and Systran Translate websites.
+
+**Mapping to Adversarial Threat Matrix:**
+- Using published research papers, the researchers gathered similar datasets and model architectures that these translation services used
+- They abuse a public facing application to query the model and produce machine translated sentence pairs as training data
+- Using these translated sentence pairs, researchers trained a substitute model (model replication)
+- The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
+
+<img src="/images/AttackOnMT.png" width="650" height="150"/>
+
+**Reported by:**
+- Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong)
+
+**Source:**
+- https://arxiv.org/abs/2004.15015
+- https://www.ericswallace.com/imitation
+
 
 ----
 
@@ -168,85 +254,6 @@ MITRE AI Red Team
 
 **Source:** 
 None
-
-----
-## Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate
-
-**Summary of Incident:**
-Machine translation services (such as Google Translate, Bing Translator, and Systran Translate) provide public-facing UIs and APIs. A research group at UC Berkeley utilized these public endpoints to create an "imitation model" with near-production, state-of-the-art translation quality. Beyond demonstrating that IP can be stolen from a black-box system, they used the imitation model to successfully transfer adversarial examples to the real production services. These adversarial inputs successfully cause targeted word flips, vulgar outputs, and dropped sentences on Google Translate and Systran Translate websites.
-
-**Mapping to Adversarial Threat Matrix:**
-- Using published research papers, the researchers gathered similar datasets and model architectures that these translation services used
-- They abuse a public facing application to query the model and produce machine translated sentence pairs as training data
-- Using these translated sentence pairs, researchers trained a substitute model (model replication)
-- The replicated models were used to construct offline adversarial examples that successfully transferred to an online evasion attack
-
-<img src="/images/AttackOnMT.png" width="650" height="150"/>
-
-**Reported by:**
-- Work by Eric Wallace, Mitchell Stern, Dawn Song and reported by Kenny Song (@helloksong)
-
-**Source:**
-- https://arxiv.org/abs/2004.15015
-- https://www.ericswallace.com/imitation
-
-----
-## VirusTotal Poisoning
-
-**Summary of Incident:** An increase in reports of a certain ransomware family that was out of the ordinary was noticed. In investigating the case, it was observed that many samples of that particular ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Further investigation revealed that based on string similarity, the samples were all equivalent, and based on code similarity they were between 98 and 74 percent similar. Interestingly enough, the compile time was the same for all the samples.  After more digging, the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate the original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
-
-**Mapping to Adversarial Threat Matrix:**
-
-- The actor used a malware sample from a prevalent ransomware family as a start to create ‘mutant’ variants.
-- The actor uploaded ‘mutant’ samples to the platform.
-- Several vendors started to classify the files as the ransomware family even though most of them won’t run.
-- The ‘mutant‘ samples poisoned the dataset the ML model(s) use to identify and classify this ransomware family.
-
-<img src="/images/VirusTotal.png" width="450" height="150"/>
-
-**Reported by:**
-- Christiaan Beek (@ChristiaanBeek) - McAfee ATR Team
-
-**Source:**
-- McAfee Advanced Threat Research
-
-----
-## Bypassing Cylance's AI Malware Detection
-
-**Summary of Incident:** Researchers at Skylight were able to create a universal bypass string that when appended to a malicious file evades detection by Cylance's AI Malware detector.
-
-**Mapping to Adversarial Threat Matrix :**
-- The researchers read publicly available information and enabled verbose logging to understand the inner workings of the ML model, particularly around reputation scoring.
-- The researchers reverse-engineered the ML model to understand which attributes provided what level of positive or negative reputation. Along the way, they discovered a secondary model which was an override for the first model. Positive assessments from the second model overrode the decision of the core ML model.
-- Using this knowledge, the researchers fused attributes of known good files with malware. Due to the secondary model overriding the primary, the researchers were effectively able to bypass the ML model.
-
-<img src="/images/cylance.png" alt="Cylance" height="150"/>
-
-**Reported by:**
-Research and work by Adi Ashkenazy, Shahar Zini, and SkyLight Cyber team. Notified to us by Ken Luu (@devianz_)
-
-
-**Source:**
-- https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
-
-
-----
-## Camera Hijack Attack on Facial Recognition System
-**Summary of Incident:** This type of attack can break through the traditional live detection model and cause the misuse of face recognition.
-
-**Mapping to Adversarial Threat Matrix:**
-- The attackers bought customized low-end mobile phones, customized android ROMs, a specific virtual camera application, identity information and face photos.
-- The attackers used software to turn static photos into videos, adding realistic effects such as blinking eyes. Then the attackers use the purchased low-end mobile phone to import the generated video into the virtual camera app.
-- The attackers registered an account with the victim's identity information. In the verification phase, the face recognition system called the camera API, but because the system was hooked or rooted, the video stream given to the face recognition system was actually provided by the virtual camera app.
-- The attackers successfully evaded the face recognition system and impersonated the victim.
-
-<img src="/images/FacialRecognitionANT.png" width="450" height="150"/>
-
-**Reported by:**
-- Henry Xuef, Ant Group AISEC Team
-
-**Source:**
-- Ant Group AISEC Team
 
 ----
 # Contributing New Case Studies
