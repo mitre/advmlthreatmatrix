@@ -38,6 +38,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
   - [Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate](/pages/case-studies-page.md#attack-on-machine-translation-service---google-translate-bing-translator-and-systran-translate)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
+  - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
 
 
 ![alt text](images/AdvMLThreatMatrix.jpg)
@@ -65,6 +66,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | Citadel AI | Kenny Song |
 | McAfee              | Christiaan Beek |
 | Unaffiliated | Ken Luu |
+| Ant Group | Henry Xuef |
 
 ## Feedback and Getting Involved 
 
