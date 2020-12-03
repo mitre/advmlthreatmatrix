@@ -200,7 +200,7 @@ After digging more into the discovery was made that someone used 'metame' a meta
 - Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants.
 - Actor uploaded ‘mutant’ samples to platform.
 - Several vendors started to classify the files as the ransomware family even though most of them won’t run.
-- These files could poiso n the ML model(s) used to identify and classify this ransomware family.
+- The ‘mutant‘ samples poison the dataset the ML model(s) use to identify and classify this ransomware family.
 
 <img src="/images/VirusTotal.png" width="450" height="150"/>
 
