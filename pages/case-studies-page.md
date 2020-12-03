@@ -191,14 +191,12 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 ----
 ## VirusTotal Poisoning
 
-**Summary of Incident:** : An increase was noticed of a certain ransomware family that was out of the ordinary. Investigating the case, many samples of that particular
-ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Investigating the samples, based on string similarity they were all equal. Based on Code similarity the samples were between 98 and 74 percent equal. Interesting enough the compile time was the same for all the samples.
-After digging more into the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate an original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
+**Summary of Incident:** An increase in reports of a certain ransomware family that was out of the ordinary was noticed. In investigating the case, it was observed that many samples of that particular ransomware family were submitted through a popular Virus-Sharing platform within a short amount of time. Further investigation revealed that based on string similarity, the samples were all equivalent, and based on code similarity they were between 98 and 74 percent similar. Interestingly enough, the compile time was the same for all the samples.  After more digging, the discovery was made that someone used 'metame' a metamorphic code manipulating tool to manipulate the original file towards mutant variants. The variants wouldn't always be executable but still classified as the same ransomware family.
 
 **Mapping to Adversarial Threat Matrix:**
 
-- Actor used malware sample from prevalent ransomware family as a start to create ‘mutant’ variants.
-- Actor uploaded ‘mutant’ samples to platform.
+- The actor used a malware sample from a prevalent ransomware family as a start to create ‘mutant’ variants.
+- The actor uploaded ‘mutant’ samples to the platform.
 - Several vendors started to classify the files as the ransomware family even though most of them won’t run.
 - The ‘mutant‘ samples poisoned the dataset the ML model(s) use to identify and classify this ransomware family.
 
