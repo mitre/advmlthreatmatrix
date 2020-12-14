@@ -1,5 +1,7 @@
 ## Case Studies Page
 
+  - [Evasion of Deep Learning detector for malware C&C traffic](/pages/case-studies-page.md#evasion-of-deep-learning-detector-for-malware-cc-traffic)
+  - [Botnet Domain Generation Algorithm (DGA) Detection Evasion](/pages/case-studies-page.md#botnet-domain-generation-algorithm-dga-detection-evasion)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
   - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
@@ -19,6 +21,55 @@ Attacks on machine learning (ML) systems are being developed and released with i
 2. Range of Personas: Average user, Security researchers, ML Researchers and Fully equipped Red team.
 3. Range of ML Paradigms: Attacks on MLaaS, ML models hosted on cloud, hosted on-premise, ML models on edge.
 4. Range of Use case: Attacks on ML systems used in both "security-sensitive" applications like cybersecurity and non-security-sensitive applications like chatbots.
+
+----
+
+## Evasion of Deep Learning detector for malware C&C traffic
+
+**Summary of Incident:** Palo Alto Networks Security AI research team tested a deep learning model for malware command and control (C&C) traffic detection in HTTP traffic. Based on the publicly available paper by Le et al. [1] (open source intelligence), we built a model that was trained on a similar dataset as our production model and had performance similar to it. Then we crafted adversarial samples and queried the model and adjusted the adversarial sample accordingly till the model was evaded.
+
+**Mapping to Adversarial Threat Matrix:**
+
+- The team trained the model on ~ 33 million benign and ~ 27 million malicious HTTP packet headers
+- Evaluation showed a true positive rate of ~ 99% and false positive rate of ~0.01%, on average
+- Testing the model with a HTTP packet header from known malware command and control traffic samples was detected as malicious with high confidence (> 99%).
+- The attackers crafted evasion samples by removing fields from packet header which are typically not used for C&C communication (e.g. cache-control, connection, etc.)
+- With the crafted samples the attackers performed online evasion of the ML based spyware detection model. The crafted packets were identified as benign with >80% confidence.
+- This evaluation demonstrates that adversaries are able to bypass advanced ML detection techniques, by crafting samples that are misclassified by an ML model.
+
+<img src="/images/paloalto1.png" height="150"/>
+
+**Reported by:**
+- Palo Alto Networks (Network Security AI Research Team)
+
+**Source:**
+- [1] Le, Hung, et al. "URLNet: Learning a URL representation with deep learning for malicious URL detection." arXiv preprint arXiv:1802.03162 (2018).
+
+
+----
+
+## Botnet Domain Generation Algorithm (DGA) Detection Evasion
+
+**Summary of Incident:** Palo Alto Networks Security AI research team was able to bypass a Convolutional Neural Network (CNN)-based botnet Domain Generation Algorithm (DGA) detection [1] by domain name mutations. It is a generic domain mutation technique which can evade most ML-based DGA detection modules, and can also be used for testing against all DGA detection products in the security industry.
+
+**Mapping to Adversarial Threat Matrix:**
+
+- DGA detection is a widely used technique to detect botnets in academia and industry. 
+- The researchers look into a publicly available CNN-based DGA detection model [1] and tested against a well-known DGA generated domain name data sets, which includes ~50 million domain names from 64 botnet DGA families.
+- The CNN-based DGA detection model shows more than 70% detection accuracy on 16 (~25%) botnet DGA families.
+- On the DGA generated domain names from 16 botnet DGA families, we developed a generic mutation technique that requires a minimum number of mutations, but achieves a very high evasion rate.
+- Experiment results show that, after only one string is inserted once to the DGA generated domain names, the detection rate of all 16 botnet DGA families can drop to less than 25% detection accuracy.
+- The mutation technique can evade almost all DGA detections, not limited to CNN-based DGA detection shown in this example. If the attackers add it on top of the existing DGA, most of the DGA detections might fail.
+- The generic mutation techniques can also be used to test the effectiveness and robustness of all DGA detection methods developed by security companies in the industry before it is deployed to the production environment.
+
+<img src="/images/paloalto2.png" height="150"/>
+
+**Reported by:**
+- Palo Alto Networks (Network Security AI Research Team)
+
+**Source:**
+- [1] Yu, Bin, Jie Pan, Jiaming Hu, Anderson Nascimento, and Martine De Cock. "Character level based detection of DGA domain names." In 2018 International Joint Conference on Neural Networks (IJCNN), pp. 1-8. IEEE, 2018. Source code is available from Github: https://github.com/matthoffman/degas
+
 
 ----
 

@@ -28,6 +28,8 @@ We recommend digging into [Adversarial ML Threat Matrix](/pages/adversarial-ml-t
 
 To see the Matrix in action, we recommend seeing the curated case studies
 
+  - [Evasion of Deep Learning detector for malware C&C traffic](/pages/case-studies-page.md#evasion-of-deep-learning-detector-for-malware-cc-traffic)
+  - [Botnet Domain Generation Algorithm (DGA) Detection Evasion](/pages/case-studies-page.md#botnet-domain-generation-algorithm-dga-detection-evasion)
   - [VirusTotal Poisoning](/pages/case-studies-page.md#virustotal-poisoning)
   - [Bypassing Cylance's AI Malware Detection](/pages/case-studies-page.md#bypassing-cylances-ai-malware-detection)
   - [Camera Hijack Attack on Facial Recognition System](/pages/case-studies-page.md#camera-hijack-attack-on-facial-recognition-system)
@@ -67,6 +69,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | McAfee              | Christiaan Beek |
 | Unaffiliated | Ken Luu |
 | Ant Group | Henry Xuef |
+| Palo Alto Networks | May Wang, Stefan Achleitner, Yu Fu, Ajaya Neupane, Lei Xu |
 
 ## Feedback and Getting Involved 
 
