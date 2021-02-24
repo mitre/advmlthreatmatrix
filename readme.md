@@ -54,7 +54,7 @@ To see the Matrix in action, we recommend seeing the curated case studies
 | :---                | :---                |
 | Microsoft           | Ram Shankar Siva Kumar, Hyrum Anderson, Suzy Schapperle, Blake Strom, Madeline Carmichael, Matt Swann, Mark Russinovich, Nick Beede, Kathy Vu, Andi Comissioneru, Sharon Xia, Mario Goertzel, Jeffrey Snover, Derek Adam, Deepak Manohar, Bhairav Mehta, Peter Waxman, Abhishek Gupta, Ann Johnson, Andrew Paverd, Pete Bryan, Roberto Rodriguez, Will Pearce  |
 | MITRE               | Mikel Rodriguez, Christina Liaghati, Keith Manville, Michael Krumdick, Josh Harguess, Virginia Adams, Shiri Bendelac, Henry Conklin, Poomathi Duraisamy, David Giangrave, Emily Holt, Kyle Jackson, Nicole Lape, Sara Leary, Eliza Mace, Christopher Mobley, Savanna Smith, James Tanis, Michael Threet, David Willmes, Lily Wong |
-| Bosch               | Manojkumar Parmar |
+| Bosch               | Manojkumar Parmar, Duplys Paul, Jorge Guajardo Merchan, Amit Phadke, Adit Shah, Tanya Motwani, Pankaj Maurya  |
 | IBM                 | Pin-Yu Chen       |
 | NVIDIA              | David Reber Jr., Keith Kozo, Christopher Cottrell, Daniel Rohrer |
 | Airbus              | Adam Wedgbury     |
