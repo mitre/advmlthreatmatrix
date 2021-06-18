@@ -1,3 +1,8 @@
+# Annoucing ATLAS!
+We are excited to announce the new and interactive release of the AdvML Threat Matrix under a newly branded name: **ATLAS** - Adversarial Threat Landscape for Artificial-Intelligence Systems!
+
+Please visit our new website at https://atlas.mitre.org for the new interactive matrix, new case studies, and a tailored ATLAS Navigator!
+
 # Adversarial ML Threat Matrix - Table of Contents
 1. [Adversarial ML 101](/pages/adversarial-ml-101.md#adversarial-machine-learning-101)
 2. [Adversarial ML Threat Matrix](pages/adversarial-ml-threat-matrix.md#adversarial-ml-threat-matrix)
