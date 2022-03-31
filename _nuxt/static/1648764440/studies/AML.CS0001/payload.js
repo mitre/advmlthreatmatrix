@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/studies/AML.CS0001", {data:[{}],fetch:{},mutations:[]});

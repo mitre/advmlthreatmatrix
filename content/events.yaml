@@ -1,0 +1,36 @@
+data:
+- name: RSA
+  date: 2021-05-17
+  location: Virtual
+  description: |
+    MITRE and Microsoft facilitated the [ATT&CK® for Adversarial Machine Learning: Tacky or Tasty?](https://www.rsaconference.com/library/Presentation/USA/2021/attck-for-adversarial-machine-learning-tacky-or-tasty) session.
+  url: https://www.rsaconference.com/events/2021-usa
+  color: 'red'
+- name: WACV
+  date: 2022-01-04
+  location: Waikoloa, HI
+  description: |
+    MITRE ATLAS hosted a booth at the Workshop on Applications of Computer Vision.
+  url: https://wacv2022.thecvf.com/
+  color: 'blue'
+- name: NAML
+  date: 2022-03-22
+  location: Virtual
+  description: ATLAS & AI security were presented at the Naval Applications of Machine Learning virtual conference in March!
+  url: https://sites.google.com/go.spawar.navy.mil/naml/agenda
+  color: 'cyan'
+- name: Purple Hats
+  date: 2022-04-21
+  location: Virtual
+  description: We'll be presenting on ATLAS & AI security at ATTACK IQ's Purple Hats virtual conference in April!
+  url: https://www.purplehats.org/2022
+  color: 'deep-purple'
+- name: RSA
+  date: 2022-06-06
+  location: San Francisco, CA
+  description: |
+    MITRE, Microsoft, Google, and Meta/Facebook are talking about AI Red Teaming, Security, and ATLAS at the RSA conference in-person in San Francisco in June!
+
+    Our ATLAS team will also be at the MITRE booth all week.
+  url: https://www.rsaconference.com/usa
+  color: 'red'

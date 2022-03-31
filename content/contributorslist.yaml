@@ -1,0 +1,161 @@
+---
+data:
+  -
+    organization: MITRE
+    contributors:
+      - Mikel Rodriguez
+      - Christina Liaghati
+      - Keith Manville
+      - Michael Krumdick
+      - Josh Harguess
+      - Virginia Adams
+      - Shiri Bendelac
+      - Henry Conklin
+      - Poomathi Duraisamy
+      - David Giangrave
+      - Emily Holt
+      - Kyle Jackson
+      - Nicole Lape
+      - Sara Leary
+      - Eliza Mace
+      - Christopher Mobley
+      - Savanna Smith
+      - James Tanis
+      - Michael Threet
+      - David Willmes
+      - Lily Wong
+      - Mouaz Alhindi
+      - Marissa Dotter
+      - Colin Busho
+      - Shane Shroeder
+      - Andy Applebaum
+      - Jonathan Broadbent
+      - Isabel Tuson
+
+  -
+    organization: Microsoft
+    contributors:
+      - Ram Shankar
+      - Siva Kumar
+      - Hyrum Anderson
+      - Suzy Schapperle
+      - Blake Strom
+      - Madeline Carmichael
+      - Matt Swann
+      - Mark Russinovich
+      - Nick Beede
+      - Kathy Vu
+      - Andi Comissioneru
+      - Sharon Xia
+      - Mario Goertzel
+      - Jeffrey Snover
+      - Derek Adam
+      - Deepak Manohar
+      - Bhairav Mehta
+      - Peter Waxman
+      - Abhishek Gupta
+      - Ann Johnson
+      - Andrew Paverd
+      - Pete Bryan
+      - Roberto Rodriguez
+      - Will Pearce
+
+  -
+    organization: Bosch
+    contributors:
+        - Manojkumar Parmar
+        - Duplys Paul
+        - Jorge Guajardo Merchan
+        - Amit Phadke
+        - Adit Shah
+        - Tanya Motwani
+        - Pankaj Maurya
+
+  -
+    organization: IBM
+    contributors:
+      - Pin-Yu Chen
+
+  -
+    organization: NVIDIA
+    contributors:
+      - David Reber Jr.
+      - Keith Kozo
+      - Christopher Cottrell
+      - Daniel Rohrer
+
+  -
+    organization: Airbus
+    contributors:
+      - Adam Wedgbury
+
+  -
+    organization: PricewaterhouseCoopers
+    contributors:
+      - Michael Montecillo
+
+  -
+    organization: Deep Instinct
+    contributors:
+      - Nadav Maman
+      - Shimon Noam Oren
+      - Ishai Rosenberg
+
+  -
+    organization: Two Six Labs
+    contributors:
+      - David Slater
+
+  -
+    organization: University of Toronto
+    contributors:
+      - Adelin Travers
+      - Jonas Guan
+      - Nicolas Papernot
+
+  -
+    organization: Cardiff University
+    contributors:
+      - Pete Burnap
+
+  -
+    organization: Software Engineering Institute/Carnegie Mellon University
+    contributors:
+      - Nathan M. VanHoudnos
+
+  -
+    organization: Berryville Institute of Machine Learning
+    contributors:
+      - Gary McGraw
+      - Harold Figueroa
+      - Victor Shepardson
+      - Richie Bonett
+
+  -
+    organization: Citadel AI
+    contributors:
+      - Kenny Song
+
+  -
+    organization: McAfee
+    contributors:
+      - Christiaan Beek
+
+  -
+    organization: Unaffiliated
+    contributors:
+      - Ken Luu
+
+  -
+    organization: Ant Group
+    contributors:
+      - Henry Xuef
+
+  -
+    organization: Palo Alto Networks
+    contributors:
+      - May Wang
+      - Stefan Achleitner
+      - Yu Fu
+      - Ajaya Neupane
+      - Lei Xu

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/matrix", {data:[{}],fetch:{},mutations:[]});
