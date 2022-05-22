@@ -156,7 +156,9 @@ All ML models exist in code, and thus vulnerable to "traditional software attack
 #### ![AdvML](/images/color_advml.png)Execute unsafe ML Model Execution
 
 An Adversary may utilize unsafe ML Models that when executed have an unintended effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a [Pre-trained Model with Backdoor](#Pre-Trained-ML-Model-with-Backdoor). An example of this technique is to use pickle embedding to introduce malicious data payloads.
+#### ![AdvML](/images/color_advml.png)Enhance persistence of Backdoor
 
+The common backdoored model is easy to fail in transfer learning, knowledge distillation and other learning paradigms, which means that the backdoor is no longer valid. In order to obtain the persistence of backdoors in downstream tasks, Adversaries may adopt novel methods of planting backdoors, such as [Latent Backdoor](http://people.cs.uchicago.edu/~huiyingli/publication/fr292-yaoA.pdf), [Progammable Backdoor](https://arxiv.org/pdf/1901.07766.pdf), [Anti-Distillation Backdoor](https://dl.acm.org/doi/abs/10.1145/3474085.3475254).
 ### ![Cyber](/images/color_cyber.png) Included ATT&CK Techniques
 <details> 
 <summary>Account Manipulation</summary>
