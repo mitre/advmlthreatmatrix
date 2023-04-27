@@ -179,7 +179,7 @@ Machine translation services (such as Google Translate, Bing Translator, and Sys
 
 ## GPT-2 Model Replication 
 
-**Summary of Incident:** : OpenAI built GPT-2, a powerful natural language model and adopted a staged-release process to incrementally release 1.5 Billion parameter model. Before the 1.5B parameter model could be released by OpenAI eventually, two ML researchers replicated the model and released it to the public. *Note this is an example of model replication NOT model model extraction. Here, the attacker is able to recover a functionally equivalent model but generally with lower fidelity than the original model, perhaps to do reconnaissance (See ProofPoint attack). In Model extraction, the fidelity of the model is comparable to the original, victim model.*
+**Summary of Incident:** : OpenAI built GPT-2, a powerful natural language model and adopted a staged-release process to incrementally release 1.5 Billion parameter model. Before the 1.5B parameter model could be released by OpenAI eventually, two ML researchers replicated the model and released it to the public. *Note this is an example of model replication NOT model extraction. Here, the attacker is able to recover a functionally equivalent model but generally with lower fidelity than the original model, perhaps to do reconnaissance (See ProofPoint attack). In model extraction, the fidelity of the model is comparable to the original, victim model.*
 
 **Mapping to Adversarial Threat Matrix :**
 -   Using public documentation about GPT-2, ML researchers gathered similar datasets used during the original GPT-2 training.
